@@ -78,3 +78,10 @@ version, commit 0b3340c of the paper repo) or from the certificate repository (r
 - Live site (after deploy): phone-sized screenshots of chapters 1, 3 and 7 look right, with no errors.
 - Not tested: real Safari and Firefox, real phones. The WebGL fallback images exist (`docs/assets/img/`) but the
   fallback path was not exercised.
+
+## 19 Nov: triangular form, Ψ versus KZ, Wikipedia links (Nick)
+
+- Ch. 2 has new sections. *The triangular form* covers B = MH (Nick's letters; M is used for this triangle only on that page), the entries μ_ij|b_j*|, the problem as a search over U for the triangle of UM, size reduction as the free lower-triangular moves (2007 Lemma 2), and the coordinate count 2, 5, 9, 14 leading to stage 1 and stage 2. *Two ways to say best* has the 2007 §1 example (X, Y) where the Ψ-minimal basis doesn't start with a shortest vector, and a reversed-dual paragraph in triangular form (2007 Example 1).
+- New widget `psikz.js`: drag (X, Y); it compares the three positions of e and runs an exact search (`bestBasis` from lattice3d.js). Checked numerically against an exact enumeration at six points, inside and outside the region. `lattice2d` now also shows the triangular matrix and μ₂₁.
+- Wikipedia links: on each page, the first plain-text mention of A₂, A₃/fcc, bcc, D₄, D₅, E₆–E₈, LLL, BKZ, Hermite's constant, Korkine and Zolotarev (the people's pages, per Nick). The KZ algorithm page is linked in ch. 2 and the glossary. The script is idempotent per page, since it skips existing links. Wikipedia's D₄/D₅/E₆/E₇ pages are honeycomb articles reached through their "D4 lattice" etc. redirects.
+- Glossary: new entries for triangular form and size reduction; links added to the named-lattice and KZ entries.

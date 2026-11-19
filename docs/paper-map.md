@@ -1,6 +1,6 @@
 # Map to the paper
 
-Theorem numbers refer to *The isodual constant of the LLL potential: exact values and structure*, [ePrint 2026/2846](https://eprint.iacr.org/2026/2846).
+Theorem numbers refer to *The isodual constant of the [LLL](https://en.wikipedia.org/wiki/Lenstra%E2%80%93Lenstra%E2%80%93Lov%C3%A1sz_lattice_basis_reduction_algorithm) potential: exact values and structure*, [ePrint 2026/2846](https://eprint.iacr.org/2026/2846).
 
 | chapter | paper |
 |---|---|
@@ -8,7 +8,7 @@ Theorem numbers refer to *The isodual constant of the LLL potential: exact value
 | [Lattices, bases and duals](lattices.md) | §2 (Gram matrices, isoduality) |
 | [Flags and the potential](flags.md) | §2 (definition, heredity); Lemma 4, Theorem 5, Table 2; §9 ($r_{i+1}\ge\frac34r_i$) |
 | [Small dimensions](small.md) | Lemma 3; Theorems 5, 7, 8; §4.3 ($H_m$); Table 3 |
-| [Why a flag has two ends](two-ends.md) | Theorem 14 and the remark after it; §4.3 (dual-side split); §6 (shadows of D₅, D₅\*) |
+| [Why a flag has two ends](two-ends.md) | Theorem 14 and the remark after it; §4.3 (dual-side split); §6 (shadows of [D₅](https://en.wikipedia.org/wiki/D5_lattice), [D₅\*](https://en.wikipedia.org/wiki/D5_lattice)) |
 | [Project and lift](project-lift.md) | §5.1: Lemma 9, Proposition 10, Corollary 11, Proposition 12; Proposition 28 |
 | [The surprise: M\*](mstar.md) | §6: Figure 1, Definition 16, Proposition 17, Remark 18, Theorem 20, Proposition 22, Remarks 23–24, Figure 2 |
 | [Branch and bound you can watch](bnb.md) | Appendix C (coordinates, root box, leaf types); Theorem 13 (miniature only, not a result of the paper) |

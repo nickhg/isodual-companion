@@ -50,21 +50,25 @@ Short, plain definitions, with a link for more. Lengths are squared throughout, 
 
 **Critical lattice.** A lattice attaining Hermite's constant: the densest lattice packing in its dimension.
 
-**Korkine–Zolotarev reduction.** Reduction that makes each projected first vector a shortest one. Korkine and Zolotarev also found $\gamma_4$ and $\gamma_5$.
+**Korkine–Zolotarev reduction.** Reduction that makes each projected first vector a shortest one (also HKZ). It need not give a Ψ-minimal basis, already in three dimensions ([chapter 2](lattices.md#two-ways-to-say-best)). [Korkine](https://en.wikipedia.org/wiki/Aleksandr_Korkin) and [Zolotarev](https://en.wikipedia.org/wiki/Yegor_Ivanovich_Zolotaryov) also found $\gamma_4$ and $\gamma_5$. [More](https://en.wikipedia.org/wiki/Korkine%E2%80%93Zolotarev_lattice_basis_reduction_algorithm).
+
+**Triangular form.** A basis rotated so that its matrix is lower triangular, $B = MH$ with $H$ orthogonal. The diagonal holds the Gram–Schmidt heights $|b_i^*|$ and the entries below it are $\mu_{ij}|b_j^*|$. [More](lattices.md#the-triangular-form).
+
+**Size reduction.** Making every $|\mu_{ij}| \le \tfrac12$ by adding integer multiples of earlier basis vectors to later ones. It doesn't change $\Psi^2$.
 
 **$\mu_m$, the Ψ-Hermite constant.** The largest possible $|b_1|^2$ in a Ψ-minimal basis, at determinant 1. Equal to $\gamma_m$ for $m \le 5$.
 
 ## Named lattices
 
-**A_n.** Integer points in $\mathbb Z^{n+1}$ with coordinate sum 0. A₂ is the hexagonal lattice, the pattern of a honeycomb. A₃ is fcc, how greengrocers stack oranges.
+**A_n.** Integer points in $\mathbb Z^{n+1}$ with coordinate sum 0. A₂ is the [hexagonal lattice](https://en.wikipedia.org/wiki/Hexagonal_lattice), the pattern of a honeycomb. A₃ is fcc, [how greengrocers stack oranges](https://en.wikipedia.org/wiki/Close-packing_of_equal_spheres). [More](https://en.wikipedia.org/wiki/Root_system#Root_lattice).
 
-**A₃\* (bcc).** The body-centred cubic lattice, the dual of fcc.
+**A₃\* (bcc).** The body-centred cubic lattice, the dual of fcc. [More](https://en.wikipedia.org/wiki/Cubic_crystal_system).
 
-**D_n.** Integer points in $\mathbb Z^n$ with an even coordinate sum: the checkerboard. D₄ is the densest lattice in four dimensions ([more](https://en.wikipedia.org/wiki/16-cell_honeycomb)), and D₅ in five.
+**D_n.** Integer points in $\mathbb Z^n$ with an even coordinate sum: the checkerboard. D₄ is the densest lattice in four dimensions ([more](https://en.wikipedia.org/wiki/D4_lattice)), and D₅ in five ([more](https://en.wikipedia.org/wiki/D5_lattice)).
 
 **D₅\*.** The dual of D₅: $\mathbb Z^5$ together with $\mathbb Z^5 + (\tfrac12,\dots,\tfrac12)$. With D₅, the only lattice with $\eta = 6$.
 
-**E₆, E₇, E₈.** The exceptional root lattices, with 72, 126 and 240 roots, the densest lattices in dimensions 6, 7 and 8. E₈ is the densest sphere packing in eight dimensions. [More](https://en.wikipedia.org/wiki/E8_lattice).
+**E₆, E₇, E₈.** The exceptional root lattices, with 72, 126 and 240 roots, the densest lattices in dimensions 6, 7 and 8. E₈ is the densest sphere packing in eight dimensions. More: [E₆](https://en.wikipedia.org/wiki/E6_lattice), [E₇](https://en.wikipedia.org/wiki/E7_lattice), [E₈](https://en.wikipedia.org/wiki/E8_lattice).
 
 **$A_2\otimes A_2$.** A four-dimensional lattice built from two copies of the hexagonal lattice. It is isodual, and the far end of the geodesic in chapter 7.
 

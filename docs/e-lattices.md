@@ -1,6 +1,6 @@
 # E₆, E₇, E₈
 
-Above dimension five the pattern from chapter 4 predicts the answer. The densest lattices in dimensions 6, 7 and 8 are E₆, E₇ and E₈, and their root flags meet Hermite's bound at every step. So the natural guess is
+Above dimension five the pattern from chapter 4 predicts the answer. The densest lattices in dimensions 6, 7 and 8 are [E₆](https://en.wikipedia.org/wiki/E6_lattice), [E₇](https://en.wikipedia.org/wiki/E7_lattice) and [E₈](https://en.wikipedia.org/wiki/E8_lattice), and their root flags meet Hermite's bound at every step. So the natural guess is
 
 $$
 \eta_6 = \frac{128\sqrt3}{9} \approx 24.63, \qquad \eta_7 = 144, \qquad \eta_8 = 2304.
@@ -11,7 +11,7 @@ The last is proved (chapter 4). The first two are a conjecture, attained, if tru
 In the paper: Conjecture 25, Theorem 8.
 { .paper-ref }
 
-A quick introduction, since these lattices may be less familiar. E₈ is the exceptional eight-dimensional lattice from chapter 4, with 240 roots ([more](https://en.wikipedia.org/wiki/E8_lattice)). E₇ and E₆ are sections of it, sublattices cut out by linear conditions. E₇ is seven-dimensional with 126 roots, and E₆ is six-dimensional with 72 roots. Like D₅, they are not isodual, so each comes with a distinct dual partner.
+A quick introduction, since these lattices may be less familiar. E₈ is the exceptional eight-dimensional lattice from chapter 4, with 240 roots ([more](https://en.wikipedia.org/wiki/E8_lattice)). E₇ and E₆ are sections of it, sublattices cut out by linear conditions. E₇ is seven-dimensional with 126 roots, and E₆ is six-dimensional with 72 roots. Like [D₅](https://en.wikipedia.org/wiki/D5_lattice), they are not isodual, so each comes with a distinct dual partner.
 
 ## What is proved: local maxima
 
@@ -55,7 +55,7 @@ So for D₅ the paper does the work by hand, or rather by machine. It enumerates
 In the paper: Theorem 13, Appendix A.
 { .paper-ref }
 
-The exact first-order rates are now known at D₄, where $r = 2/3$, and at D₅, where $r = 4/(3\sqrt5)$. With the exact rate, the radius around D₅ grows from $1/10$ to $6/25$. For E₆ and E₇ only bounds are known, and pinning them down is one of the open problems.
+The exact first-order rates are now known at [D₄](https://en.wikipedia.org/wiki/D4_lattice), where $r = 2/3$, and at D₅, where $r = 4/(3\sqrt5)$. With the exact rate, the radius around D₅ grows from $1/10$ to $6/25$. For E₆ and E₇ only bounds are known, and pinning them down is one of the open problems.
 
 ## What remains open
 

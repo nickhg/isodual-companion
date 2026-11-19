@@ -148,6 +148,11 @@ export default function lattice2d(el, cfg) {
       `<table><tr><td>|b₁|²</td><td>${fmt(n1)}</td><td>det Gram(b₁, b₂) = Δ</td><td>${fmt(G2)}</td></tr>` +
       `<tr><td>|b₂|²</td><td>${fmt(n2)}</td><td>Ψ² = |b₁|² · Δ</td><td>${fmt(n1 * G2)}</td></tr>` +
       `<tr><td>Ψ² / Δ<sup>3/2</sup></td><td>${fmt(n1 / Math.sqrt(G2))}</td><td>η(L) = λ₁² / √Δ</td><td>${fmt(l1)}</td></tr></table>` +
+      `<p>Rotated so that b₁ lies along the first axis, the basis is lower triangular, with μ₂₁ = ${fmt(m / n1, 3)}:</p>` +
+      `<table class="wmatrix"><tr><td>|b₁| = ${fmt(Math.sqrt(n1), 3)}</td><td>0</td></tr>` +
+      `<tr><td>μ₂₁|b₁| = ${fmt(m / Math.sqrt(n1), 3)}</td><td>|b₂*| = ${fmt(Math.sqrt(G2 / n1), 3)}</td></tr></table>` +
+      `<p>${Math.abs(m / n1) > 0.5 + 1e-9 ? "|μ₂₁| > ½: subtracting a multiple of b₁ from b₂ (a lower-triangular change) brings it into [−½, ½] without changing Ψ²."
+        : "|μ₂₁| ≤ ½: the basis is size-reduced."}</p>` +
       `<p class="${isMin ? "ok" : ""}">${isMin ? "This basis is Ψ-minimal: b₁ is a shortest vector, so Ψ² / Δ<sup>3/2</sup> = η(L)."
         : "Not Ψ-minimal yet: there is a shorter choice of b₁. (Moving b₂ alone never changes Ψ² in two dimensions.)"}</p>`;
   }

@@ -6,7 +6,7 @@ The natural proof reduces five dimensions to four, through $\Phi_5$, and stops a
 
 Stage 1 is the search of the last chapter, with $n = 4$. It runs over Ψ-minimal bases of four-dimensional lattices $M$, in the nine coordinates $(y_1, y_2, y_3, \mu_{10}, \dots, \mu_{32})$, with threshold 6. A box closes if it contains no Ψ-minimal basis (D), or if $\Phi_5 < 6$ on all of it (A).
 
-Near D₄ and $M_*$, where $\Phi_5 > 6$, boxes can't close. When a box is still open after its width has dropped below $0.12$, it is *collected*: written out exactly, in hexadecimal, and passed on.
+Near [D₄](https://en.wikipedia.org/wiki/D4_lattice) and $M_*$, where $\Phi_5 > 6$, boxes can't close. When a box is still open after its width has dropped below $0.12$, it is *collected*: written out exactly, in hexadecimal, and passed on.
 
 In the paper: Theorem 14, Appendix E, "Stage 1".
 { .paper-ref }
@@ -19,7 +19,7 @@ The numbers:
 - $15{,}419{,}650$ of them collected;
 - after gluing neighbouring collected boxes back together (two boxes that agree in eight coordinates and touch in the ninth become one), $3{,}605{,}989$ boxes. These are the roots of stage 2.
 
-Stage 1 also had balls around $\pi_vD_5$, the shadow of D₅, available as leaves. None was used. Every box near $\pi_vD_5$ was collected first, so the equality case is decided entirely in stage 2.
+Stage 1 also had balls around $\pi_vD_5$, the shadow of [D₅](https://en.wikipedia.org/wiki/D5_lattice), available as leaves. None was used. Every box near $\pi_vD_5$ was collected first, so the equality case is decided entirely in stage 2.
 
 Before this, the same machinery was run twice as warm-ups, which are now theorems of their own. The first, with threshold 7, proved $\eta_5 < 7$ ($2.39\times10^7$ leaves). The second, with threshold $2^{16}/(3^4\cdot5^3)$ and balls around the ten copies of $M_*$ in the search box, proved that $M_*$ is the global maximum of $\Phi_5$ ($3.65\times10^8$ leaves).
 
@@ -36,12 +36,12 @@ $$
 
 Stage 2 searches over all of $(S, \varphi, r)$ with $S$ in the box: 9 coordinates for $S$, 4 for $\varphi$ and 1 for $r$, fourteen in all. The ranges are small.
 
-Adding multiples of $v$ to the $b_i'$, and flipping the sign of $v$, bring $\varphi$ into $[0, \tfrac12] \times [-\tfrac12, \tfrac12]^3$. From above, $r \le \gamma_5 = 8^{1/5}$, by Korkine and Zolotarev. From below, $r \ge 2^{2/5}$: for smaller $r$, the split along $v$ gives $\eta(L) \le r^{5/2}\eta(M) \le 3r^{5/2} < 6$.
+Adding multiples of $v$ to the $b_i'$, and flipping the sign of $v$, bring $\varphi$ into $[0, \tfrac12] \times [-\tfrac12, \tfrac12]^3$. From above, $r \le \gamma_5 = 8^{1/5}$, by [Korkine](https://en.wikipedia.org/wiki/Aleksandr_Korkin) and [Zolotarev](https://en.wikipedia.org/wiki/Yegor_Ivanovich_Zolotaryov). From below, $r \ge 2^{2/5}$: for smaller $r$, the split along $v$ gives $\eta(L) \le r^{5/2}\eta(M) \le 3r^{5/2} < 6$.
 
 In the paper: proof of Theorem 14.
 { .paper-ref }
 
-So $r$ lives in the narrow interval $[2^{2/5}, 8^{1/5}] \approx [1.320, 1.516]$, between the shortest-vector lengths of D₅\* and D₅.
+So $r$ lives in the narrow interval $[2^{2/5}, 8^{1/5}] \approx [1.320, 1.516]$, between the shortest-vector lengths of [D₅\*](https://en.wikipedia.org/wiki/D5_lattice) and D₅.
 
 ## The four leaf types
 

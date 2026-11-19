@@ -24,7 +24,7 @@ $$
 
 are the *Gram–Schmidt profile* of the basis.
 
-Draw them as a row of bars, one per basis vector. For a good basis the bars usually step down from left to right, which is why this picture is called a **staircase**. A lattice's best basis gives its best staircase. For D₅, for example, the best staircase is $2, \tfrac32, \tfrac43, 1, 1$, and chapter 5 shows how that comes out at exactly 6.
+Draw them as a row of bars, one per basis vector. For a good basis the bars usually step down from left to right, which is why this picture is called a **staircase**. A lattice's best basis gives its best staircase. For [D₅](https://en.wikipedia.org/wiki/D5_lattice), for example, the best staircase is $2, \tfrac32, \tfrac43, 1, 1$, and chapter 5 shows how that comes out at exactly 6.
 
 The heights multiply to volumes. The area of the parallelogram on $b_1, b_2$ is base times height, $|b_1|\,|b_2^*|$, and in general
 
@@ -36,7 +36,7 @@ is the squared volume of $L_k$, the lattice in the $k$-th step of the flag. At t
 
 ## The potential
 
-The LLL potential multiplies the volumes of all the steps:
+The [LLL](https://en.wikipedia.org/wiki/Lenstra%E2%80%93Lenstra%E2%80%93Lov%C3%A1sz_lattice_basis_reduction_algorithm) potential multiplies the volumes of all the steps:
 
 $$
 \Psi^2(B) = G_1 G_2 \cdots G_n = r_1^{\,n}\, r_2^{\,n-1} \cdots r_n^{\,1}.
@@ -80,11 +80,11 @@ $$
 \Psi^2 = 2 \cdot 3 = 6, \qquad \eta(A_2) = \frac{6}{3^{3/2}} = \frac{2}{\sqrt3} \approx 1.1547.
 $$
 
-No basis does better, because in two dimensions $\Psi^2 = |b_1|^2\,\Delta$ and $b_1 = $ a shortest vector is the best you can do. This is Hermite's constant $\gamma_2$ again.
+No basis does better, because in two dimensions $\Psi^2 = |b_1|^2\,\Delta$ and $b_1 = $ a shortest vector is the best you can do. This is [Hermite's constant](https://en.wikipedia.org/wiki/Hermite_constant) $\gamma_2$ again.
 
 ## Working fcc
 
-In three dimensions it gets more interesting. The fcc lattice, A₃, has the Gram matrix
+In three dimensions it gets more interesting. The fcc lattice, [A₃](https://en.wikipedia.org/wiki/Close-packing_of_equal_spheres), has the Gram matrix
 
 $$
 G = \begin{pmatrix} 2 & -1 & 0 \\ -1 & 2 & -1 \\ 0 & -1 & 2 \end{pmatrix}, \qquad \Delta = 4.
@@ -103,7 +103,7 @@ The pattern $2, \tfrac32, \tfrac43, \tfrac54, \dots$ continues for every $A_n$. 
 In the paper: Lemma 4 and Theorem 5, Table 2.
 { .paper-ref }
 
-Now play with it. The widget shows fcc (or bcc, or the cubic lattice $\mathbb Z^3$) with a deliberately poor basis. The red arrow is $b_1$, and the red line is the first step of the flag. The blue plane is the span of $b_1, b_2$, the second step. The dotted lines are the Gram–Schmidt heights: from the tip of $b_2$ down to the line of $b_1$, and from the tip of $b_3$ down to the plane. The bars on the right are their squares, coloured to match. On the right are the staircase and the potential. Change the basis with the buttons. Choose $i$ and $j$, then add, subtract, swap or negate. Watch the potential fall, or press *Find best*, which searches all bases exactly.
+Now play with it. The widget shows fcc (or [bcc](https://en.wikipedia.org/wiki/Cubic_crystal_system), or the cubic lattice $\mathbb Z^3$) with a deliberately poor basis. The red arrow is $b_1$, and the red line is the first step of the flag. The blue plane is the span of $b_1, b_2$, the second step. The dotted lines are the Gram–Schmidt heights: from the tip of $b_2$ down to the line of $b_1$, and from the tip of $b_3$ down to the plane. The bars on the right are their squares, coloured to match. On the right are the staircase and the potential. Change the basis with the buttons. Choose $i$ and $j$, then add, subtract, swap or negate. Watch the potential fall, or press *Find best*, which searches all bases exactly.
 
 <div class="widget" data-widget="lattice3d" data-config='{"lattice": "fcc", "fallback": "fcc_flag.png", "fallbackCaption": "fcc with a basis: the red line is the first step of the flag, the blue plane the second."}'></div>
 
@@ -113,7 +113,7 @@ A few things to try:
 - For $\mathbb Z^3$ the best basis is the obvious one, with every step 1 and $\eta = 1$.
 - In fcc, try to get a better potential by making $b_1$ and $b_2$ both short but leaving $b_3$ long. You can't beat the staircase $2, \tfrac32, \tfrac43$.
 
-One small surprise, from the 2007 paper: in a Ψ-minimal basis, $b_1$ need not be a shortest vector of the lattice. Already in three dimensions there are lattices where the best balance between the steps starts with a slightly longer first vector. The potential and Hermite's constant ask genuinely different questions.
+One small surprise, from the 2007 paper: in a Ψ-minimal basis, $b_1$ need not be a shortest vector of the lattice. Already in three dimensions there are lattices where the best balance between the steps starts with a slightly longer first vector. The potential and Hermite's constant ask genuinely different questions. [Chapter 2](lattices.md#two-ways-to-say-best) has the explicit example, with a widget.
 
 ## The two ends of a flag
 
@@ -159,7 +159,7 @@ You can see the reversal in the widget above. Tick *view the dual* and it replac
 
 ## Three dimensions, settled in 2007
 
-The largest value of $\eta$ in three dimensions is $\eta_3 = 3/2$, attained only by fcc and bcc. The 2007 paper proved this, and Meyer found it independently a year later. In four dimensions the answer is $\eta_4 = 3$, attained by D₄. That one is due to Meyer, in his 2008 thesis. The next chapter shows how both come out of one inequality.
+The largest value of $\eta$ in three dimensions is $\eta_3 = 3/2$, attained only by fcc and bcc. The 2007 paper proved this, and Meyer found it independently a year later. In four dimensions the answer is $\eta_4 = 3$, attained by [D₄](https://en.wikipedia.org/wiki/D4_lattice). That one is due to Meyer, in his 2008 thesis. The next chapter shows how both come out of one inequality.
 
 In the paper: Proposition 6, Theorem 7.
 { .paper-ref }

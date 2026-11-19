@@ -1,6 +1,6 @@
 # The question
 
-When LLL finishes, it is because a single number has stopped going down.
+When [LLL](https://en.wikipedia.org/wiki/Lenstra%E2%80%93Lenstra%E2%80%93Lov%C3%A1sz_lattice_basis_reduction_algorithm) finishes, it is because a single number has stopped going down.
 
 That number is the product of the squared volumes of the first one, two, three, … basis vectors: the squared length of $b_1$, times the squared area of the parallelogram on $b_1, b_2$, times the squared volume of the box on $b_1, b_2, b_3$, and so on up to the whole basis. It is essentially the quantity Lenstra, Lenstra and Lovász call $D$ (theirs leaves out the volume of the whole lattice, which never changes), and they used it as the "potential" in their proof that the algorithm terminates. Every swap LLL makes shrinks it by a constant factor, and it cannot shrink forever, so LLL stops.
 
@@ -12,7 +12,7 @@ This is a cousin of a question Hermite asked in 1850, and in five dimensions its
 
 Hermite's question is about a single vector. Take a lattice in $n$ dimensions, scale it so that its fundamental cell has volume 1, and look at its shortest nonzero vector. How long can that shortest vector be? The answer, squared, is [Hermite's constant](https://en.wikipedia.org/wiki/Hermite_constant) $\gamma_n$. The lattice that attains it is the one that keeps its points as far apart as possible: the densest lattice packing of spheres.
 
-In two dimensions the answer is the hexagonal lattice, the pattern of a honeycomb, and $\gamma_2 = 2/\sqrt3$. Lagrange and Gauss knew it. In 1873 and 1877 Korkine and Zolotarev settled dimensions four and five. The answers there are D₄ and D₅, two "checkerboard" lattices that we will meet properly in a later chapter. Beyond that, Hermite's constant is known only in dimensions 6, 7, 8 and 24.
+In two dimensions the answer is the [hexagonal lattice](https://en.wikipedia.org/wiki/Hexagonal_lattice), the pattern of a honeycomb, and $\gamma_2 = 2/\sqrt3$. Lagrange and Gauss knew it. In 1873 and 1877 [Korkine](https://en.wikipedia.org/wiki/Aleksandr_Korkin) and [Zolotarev](https://en.wikipedia.org/wiki/Yegor_Ivanovich_Zolotaryov) settled dimensions four and five. The answers there are [D₄](https://en.wikipedia.org/wiki/D4_lattice) and [D₅](https://en.wikipedia.org/wiki/D5_lattice), two "checkerboard" lattices that we will meet properly in a later chapter. Beyond that, [Hermite's constant](https://en.wikipedia.org/wiki/Hermite_constant) is known only in dimensions 6, 7, 8 and 24.
 
 The 2007 question is the same kind of question, but about the whole basis rather than its first vector. A basis gives you a nested chain of subspaces: the line through $b_1$, the plane through $b_1$ and $b_2$, the 3-space through the first three, and so on. That chain is called a *flag*. Hermite asks how big the first step of the best flag can be forced to be. The LLL potential multiplies all the steps together.
 
@@ -49,11 +49,11 @@ In two dimensions the flag has only one interesting step, so $\eta$ is just Herm
 
 | $n$ | $\eta_n$ | attained by | who |
 |---|---|---|---|
-| 2 | $2/\sqrt3 \approx 1.155$ | the hexagonal lattice A₂ | Lagrange, Gauss (it is $\gamma_2$) |
-| 3 | $3/2$ | A₃ (fcc) and A₃* (bcc) | the 2007 paper; Meyer independently, 2008 |
+| 2 | $2/\sqrt3 \approx 1.155$ | the hexagonal lattice [A₂](https://en.wikipedia.org/wiki/Hexagonal_lattice) | Lagrange, Gauss (it is $\gamma_2$) |
+| 3 | $3/2$ | [A₃](https://en.wikipedia.org/wiki/Close-packing_of_equal_spheres) (fcc) and A₃* ([bcc](https://en.wikipedia.org/wiki/Cubic_crystal_system)) | the 2007 paper; Meyer independently, 2008 |
 | 4 | $3$ | D₄ | Meyer's thesis (2008); uniqueness in the new paper |
 | 5 | $6$ | D₅ and D₅*, and only them | the new paper |
-| 8 | $2304$ | E₈ | the new paper |
+| 8 | $2304$ | [E₈](https://en.wikipedia.org/wiki/E8_lattice) | the new paper |
 { .values }
 
 In the paper: Theorems A, 7, 8 and 14, Proposition 6.
@@ -61,7 +61,7 @@ In the paper: Theorems A, 7, 8 and 14, Proposition 6.
 
 Five is the dimension where Korkine and Zolotarev settled Hermite's constant, with D₅. Ask their question about the whole basis instead of its first vector, and dimension five gives the same answer, D₅, except that now its dual D₅* ties with it.
 
-Dimensions 6 and 7 are open. There is a conjecture, that the answers are attained by E₆ and E₇ with values $128\sqrt3/9 \approx 24.63$ and $144$. Both are proved to be strict local maxima, but nobody has shown that nothing else does better. Chapter 11 has the details.
+Dimensions 6 and 7 are open. There is a conjecture, that the answers are attained by [E₆](https://en.wikipedia.org/wiki/E6_lattice) and [E₇](https://en.wikipedia.org/wiki/E7_lattice) with values $128\sqrt3/9 \approx 24.63$ and $144$. Both are proved to be strict local maxima, but nobody has shown that nothing else does better. Chapter 11 has the details.
 
 Bertrand Meyer, in his 2008 thesis, put these constants inside a larger family, the *generalized Hermite constants* of Watanabe and Meyer, one for each way of chopping up a flag. The constant here is the "staircase" case, the one that uses every step. Meyer observed that very little was known about explicit values of these constants. For the staircase, no explicit value seems to have been known in dimension five or higher.
 

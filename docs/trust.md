@@ -74,7 +74,7 @@ In the paper: Appendix E, "An independent check" and "Tests".
 The paper is explicit about this. The trusted base for the computer-assisted theorems is:
 
 - the two checkers, `check_phi` (696 lines of C) and `check_lift` (557 lines), with CORE-MATH's $\exp$ and $\log$, the C compiler, and IEEE-754 arithmetic with directed rounding;
-- for Theorem 13, the ball around D₅, SageMath's exact rational arithmetic and its interval arithmetic;
+- for Theorem 13, the ball around [D₅](https://en.wikipedia.org/wiki/D5_lattice), SageMath's exact rational arithmetic and its interval arithmetic;
 - the coverage and merge scripts, about 240 lines of Python;
 - the mathematics on paper: the starting box, what each leaf type means, and the theorems the leaves call on.
 

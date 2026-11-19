@@ -1,10 +1,10 @@
 # Why a flag has two ends
 
-In 1877 Korkine and Zolotarev found the densest lattice in five dimensions. It is D₅, the five-dimensional checkerboard: all integer points $(x_1, \dots, x_5)$ with an even coordinate sum. Its Hermite constant is $\gamma_5 = 8^{1/5} \approx 1.516$, and no other five-dimensional lattice attains it.
+In 1877 [Korkine](https://en.wikipedia.org/wiki/Aleksandr_Korkin) and [Zolotarev](https://en.wikipedia.org/wiki/Yegor_Ivanovich_Zolotaryov) found the densest lattice in five dimensions. It is [D₅](https://en.wikipedia.org/wiki/D5_lattice), the five-dimensional checkerboard: all integer points $(x_1, \dots, x_5)$ with an even coordinate sum. Its Hermite constant is $\gamma_5 = 8^{1/5} \approx 1.516$, and no other five-dimensional lattice attains it.
 
 The main theorem of the paper asks their question about the whole basis instead of its first vector, and gets the same lattice back.
 
-> **$\eta_5 = 6$.** A five-dimensional lattice has $\eta(L) = 6$ if and only if it is similar to D₅ or to its dual D₅\*.
+> **$\eta_5 = 6$.** A five-dimensional lattice has $\eta(L) = 6$ if and only if it is similar to D₅ or to its dual [D₅\*](https://en.wikipedia.org/wiki/D5_lattice).
 
 In the paper: Theorem A (Theorem 14).
 { .paper-ref }
@@ -54,7 +54,7 @@ In the paper: the remark "Vectors and flags" after Theorem 14.
 
 ## The same pattern elsewhere
 
-The pattern shows up wherever the answer is known or conjectured. In dimension 3, fcc and bcc tie for $\eta_3 = 3/2$. D₄ and E₈ are their own duals, so each is its own partner and wins alone. In dimensions 6 and 7 the conjectured winners come in pairs again, E₆ with E₆\* and E₇ with E₇\*.
+The pattern shows up wherever the answer is known or conjectured. In dimension 3, [fcc](https://en.wikipedia.org/wiki/Close-packing_of_equal_spheres) and [bcc](https://en.wikipedia.org/wiki/Cubic_crystal_system) tie for $\eta_3 = 3/2$. [D₄](https://en.wikipedia.org/wiki/D4_lattice) and [E₈](https://en.wikipedia.org/wiki/E8_lattice) are their own duals, so each is its own partner and wins alone. In dimensions 6 and 7 the conjectured winners come in pairs again, [E₆](https://en.wikipedia.org/wiki/E6_lattice) with E₆\* and [E₇](https://en.wikipedia.org/wiki/E7_lattice) with E₇\*.
 
 So two winners isn't a defect of the theorem. A question that weighs the first and last steps of a basis equally should be expected to have a lattice and its dual as joint answers.
 

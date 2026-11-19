@@ -98,3 +98,11 @@
   background: var(--md-default-bg-color); color: var(--w-fg); padding: 0 0.35em; border-radius: 3px; opacity: 0.9; }
 .md-typeset figure.contour img { max-width: 560px; width: 100%; background: #fff; border-radius: 4px; }
 .w3label.left { transform: translate(calc(-100% - 10px), -110%); }
+
+/* psikz widget and small matrices in readouts */
+.psikz-wrap { display: flex; flex-wrap: wrap; gap: 1em; align-items: flex-start; }
+.psikz-wrap > svg { flex: 0 0 260px; }
+.psikz-wrap > .wreadout { flex: 1 1 260px; }
+.md-typeset .wreadout table.wmatrix { border-left: 2px solid var(--w-fg); border-right: 2px solid var(--w-fg); border-radius: 4px; }
+.md-typeset .wreadout table.wmatrix td { text-align: right; padding: 0.1em 0.6em; border: none; }
+.md-typeset .wreadout tr.ok td { color: var(--leaf-A); font-weight: 600; }

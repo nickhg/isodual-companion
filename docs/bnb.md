@@ -38,7 +38,7 @@ A box closes when one of three things holds on all of it.
 
 - (D) No Ψ-minimal basis here (grey). On the whole box, $b_2$ is strictly shorter than $b_1$, so swapping them gives a better basis and nothing in the box is minimal. In coordinates: $\mu^2 + e^{-2y} < 1$.
 - (A) The bound is below the threshold (green). In two dimensions $\Psi^2 = e^y$, so the box closes if $e^y < 2/\sqrt3$ on all of it.
-- (B) Inside the ball (blue). The box lies within a small distance of the hexagonal lattice, where a separate local theorem says $\eta \le 2/\sqrt3$ with equality only at the centre.
+- (B) Inside the ball (blue). The box lies within a small distance of the [hexagonal lattice](https://en.wikipedia.org/wiki/Hexagonal_lattice), where a separate local theorem says $\eta \le 2/\sqrt3$ with equality only at the centre.
 
 Box outlines are boxes still waiting. Press *Step* to process one box, or *Run* to let it go.
 
@@ -50,7 +50,7 @@ The two red curves are where the tests change. Below the dashed line, (A) works.
 
 No strict test can close a box that contains that point. (A) needs $\Psi^2 < 2/\sqrt3$ and (D) needs the basis not to be minimal, and at the hexagonal lattice neither is true. Splitting doesn't help, because some box always contains the corner. That is why the (B) ball is needed. Near the extremal lattice, a different kind of argument has to take over.
 
-The real proof has the same problem twice over. At D₅ and D₅\*, $\eta$ equals the threshold 6 exactly, so the five-dimensional search needs balls around them. These are given by Theorem 13: within distance $1/10$ of D₅ or D₅\*, $\eta \le 6$ with equality only at the centre. That theorem is proved separately, by exact linear programming. In two dimensions the ball is a small piece of Lagrange's theorem, so this part of the miniature is a stand-in.
+The real proof has the same problem twice over. At [D₅](https://en.wikipedia.org/wiki/D5_lattice) and [D₅\*](https://en.wikipedia.org/wiki/D5_lattice), $\eta$ equals the threshold 6 exactly, so the five-dimensional search needs balls around them. These are given by Theorem 13: within distance $1/10$ of D₅ or D₅\*, $\eta \le 6$ with equality only at the centre. That theorem is proved separately, by exact linear programming. In two dimensions the ball is a small piece of Lagrange's theorem, so this part of the miniature is a stand-in.
 
 In the paper: Theorem 13, Appendix A.
 { .paper-ref }
@@ -59,7 +59,7 @@ In the paper: Theorem 13, Appendix A.
 
 Now switch the threshold to 1.15, just below the truth, and run again. This time the region around the hexagonal lattice contains real lattices with $\eta$ above the threshold. No test can close it, and the ball doesn't apply, because the local theorem bounds $\eta$ by $2/\sqrt3$, not by 1.15. The search keeps splitting there until the boxes are tiny, then gives up on them. They are marked orange, as *collected*.
 
-That is exactly what the first stage of the real proof does. Its threshold is 6, but its function is $\Phi_5$, which goes above 6 near D₄ and $M_*$. Boxes there can't close, and they are collected and handed to a second stage that looks at the five-dimensional lifts directly. Chapter 9 is about that hand-off.
+That is exactly what the first stage of the real proof does. Its threshold is 6, but its function is $\Phi_5$, which goes above 6 near [D₄](https://en.wikipedia.org/wiki/D4_lattice) and $M_*$. Boxes there can't close, and they are collected and handed to a second stage that looks at the five-dimensional lifts directly. Chapter 9 is about that hand-off.
 
 ## What the real tests look like
 
