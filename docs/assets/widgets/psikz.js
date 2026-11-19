@@ -83,7 +83,7 @@ export default function psikz(el) {
       `<p>Exact search over all bases: Ψ²<sub>min</sub> = ${fmt(best.P, 4)}, with |b₁|² = ${fmt(n1, 4)}. ` +
       `The shortest vector has squared length ${fmt(lam, 4)}.</p>` +
       `<p class="${inRegion ? "ok" : ""}">${inRegion
-        ? "Inside the green region: the best basis starts with a vector longer than the shortest one. A KZ basis would put e first and lose."
+        ? "Inside the green region: the best basis starts with a vector longer than the shortest one. A KZ basis puts e first, so it does not minimise Ψ."
         : n1 > lam + 1e-9 ? "The best basis does not start with a shortest vector here."
         : "Outside the green region: here the best basis does start with a shortest vector."}</p>`;
   }
