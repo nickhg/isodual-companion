@@ -16,7 +16,7 @@ The same lattice has infinitely many bases. In the honeycomb you could take $b_1
 
 That last condition is the test. Two vectors in a 2D lattice form a basis exactly when the parallelogram they span has the smallest possible area. Any other pair spans a sublattice, with an area that is a whole multiple of the smallest one. Algebraically, if the rows of $B$ are a basis, the other bases are the rows of $UB$ with $U$ an integer matrix of determinant $\pm1$.
 
-All of lattice reduction is about this freedom. [LLL](https://en.wikipedia.org/wiki/Lenstra%E2%80%93Lenstra%E2%80%93Lov%C3%A1sz_lattice_basis_reduction_algorithm), [BKZ](https://en.wikipedia.org/wiki/Lattice_reduction) and the rest take a bad basis, long and skewed, and turn it into a good one, short and nearly orthogonal. *Good* has to be made precise, and the potential of the next chapter is one way of doing that.
+All of lattice reduction is about this freedom. [LLL](https://en.wikipedia.org/wiki/Lenstra%E2%80%93Lenstra%E2%80%93Lov%C3%A1sz_lattice_basis_reduction_algorithm), [BKZ](https://en.wikipedia.org/wiki/Korkine%E2%80%93Zolotarev_lattice_basis_reduction_algorithm) and the rest take a bad basis, long and skewed, and turn it into a good one, short and nearly orthogonal. *Good* has to be made precise, and the potential of the next chapter is one way of doing that.
 
 Try it. The widget starts with a poor basis of the hexagonal lattice. Drag the arrowheads. The shaded cell is the parallelogram on $b_1, b_2$. If it ever contains another lattice point, the readout tells you that you've dropped to a sublattice.
 
