@@ -55,6 +55,7 @@ extra_css:
 extra_javascript:
   - assets/vendor/katex/katex.min.js
   - assets/katex-init.js
+  - assets/external-links.js
   - path: assets/widgets/loader.js
     type: module
 

@@ -2,11 +2,11 @@
 
 When [LLL](https://en.wikipedia.org/wiki/Lenstra%E2%80%93Lenstra%E2%80%93Lov%C3%A1sz_lattice_basis_reduction_algorithm) finishes, it is because a single number has stopped going down.
 
-That number is the product of the squared volumes of the first one, two, three, … basis vectors: the squared length of $b_1$, times the squared area of the parallelogram on $b_1, b_2$, times the squared volume of the box on $b_1, b_2, b_3$, and so on up to the whole basis. It is essentially the quantity Lenstra, Lenstra and Lovász call $D$ (theirs leaves out the volume of the whole lattice, which never changes), and they used it as the "potential" in their proof that the algorithm terminates. Every swap LLL makes shrinks it by a constant factor, and it cannot shrink forever, so LLL stops.
+That number is the product of the squared volumes of the first one, two, three, … basis vectors: the squared length of $b_1$, times the squared area of the parallelogram on $b_1, b_2$, times the squared volume of the box on $b_1, b_2, b_3$, and so on up to the whole basis. It is essentially the quantity [Arjen Lenstra](https://en.wikipedia.org/wiki/Arjen_Lenstra), [Hendrik Lenstra](https://en.wikipedia.org/wiki/Hendrik_Lenstra) and [László Lovász](https://en.wikipedia.org/wiki/L%C3%A1szl%C3%B3_Lov%C3%A1sz) call $D$ (theirs leaves out the volume of the whole lattice, which never changes), and they used it as the "potential" in their proof that the algorithm terminates. Every swap LLL makes shrinks it by a constant factor, and it cannot shrink forever, so LLL stops.
 
 A 2007 paper, *Isodual reduction of lattices*, asked a simple question about it. If you are allowed to pick the best possible basis, how large can that number be forced to be? Put differently, which lattice is the most stubborn, the one whose best basis still has the largest potential?
 
-This is a cousin of a question Hermite asked in 1850, and in five dimensions its answer is exactly 6. This site is a tour of that answer, of the lattice that got in the way of the obvious proof, and of how a computer was made to check about nine billion small cases, and how that check was itself checked.
+This is a cousin of a question [Hermite](https://en.wikipedia.org/wiki/Charles_Hermite) asked in 1850, and in five dimensions its answer is exactly 6. This site is a tour of that answer, of the lattice that got in the way of the obvious proof, and of how a computer was made to check about nine billion small cases, and how that check was itself checked.
 
 ## A cousin of Hermite's question
 
