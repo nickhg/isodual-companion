@@ -89,3 +89,4 @@ version, commit 0b3340c of the paper repo) or from the certificate repository (r
 
 ## 19 Nov: inline SVG fix (Web Claude's note)
 - The flags-chapter diagram (and the one in trust.md) sat inside `<figure markdown>`, so Markdown and the tooltip pass mangled it. Both are now plain `<figure>` raw-HTML blocks, which neither touches, and they still follow the light/dark theme. The flag diagram's in-picture note is gone (the caption says it), the dashed lines include the step 3 pair, and the labels are larger (`.steplbl`). No other page has inline SVG; the widgets draw their SVG from JS after the page loads, so tooltips can't reach them.
+- Also linked: Lagrange and Gauss (home page), and Meyer's thesis, *Constantes d'Hermite et théorie de Voronoï* (Bordeaux 2008, HAL tel-00346870), at its first mention on the home page, ch. 3 and ch. 4. Meyer himself is not linked, because his Wikipedia namesake is a different person.

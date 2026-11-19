@@ -43,7 +43,7 @@ $$
 \eta(D_4) = \frac{2\cdot3\cdot4\cdot4}{4^{5/2}} = \frac{96}{32} = 3.
 $$
 
-The bound is attained, so $\eta_4 = 3$. This is Meyer's theorem, from his 2008 thesis, with the same proof.
+The bound is attained, so $\eta_4 = 3$. This is Meyer's theorem, from his [2008 thesis](https://theses.hal.science/tel-00346870), with the same proof.
 
 The new paper adds uniqueness, which falls out of the same argument. Equality forces $\gamma(L) = \gamma_4$, so $L$ must be a densest lattice in four dimensions, and [Korkine](https://en.wikipedia.org/wiki/Aleksandr_Korkin) and [Zolotarev](https://en.wikipedia.org/wiki/Yegor_Ivanovich_Zolotaryov) showed that D₄ is the only one.
 

@@ -156,7 +156,7 @@ You can see the reversal in the widget above. Tick *view the dual* and it replac
 
 ## Three dimensions, settled in 2007
 
-The largest value of $\eta$ in three dimensions is $\eta_3 = 3/2$, attained only by fcc and bcc. The 2007 paper proved this, and Meyer found it independently a year later. In four dimensions the answer is $\eta_4 = 3$, attained by [D₄](https://en.wikipedia.org/wiki/D4_lattice). That one is due to Meyer, in his 2008 thesis. The next chapter shows how both come out of one inequality.
+The largest value of $\eta$ in three dimensions is $\eta_3 = 3/2$, attained only by fcc and bcc. The 2007 paper proved this, and Meyer found it independently a year later. In four dimensions the answer is $\eta_4 = 3$, attained by [D₄](https://en.wikipedia.org/wiki/D4_lattice). That one is due to Meyer, in his [2008 thesis](https://theses.hal.science/tel-00346870). The next chapter shows how both come out of one inequality.
 
 In the paper: Proposition 6, Theorem 7.
 { .paper-ref }
