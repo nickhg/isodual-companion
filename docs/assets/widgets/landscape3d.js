@@ -1,4 +1,4 @@
-// landscape3d: Phi_5 on the surface through pi_vD5, the nearest D4 and the nearest M* (paper, Figure 2), drawn in 3D.
+// landscape3d: Phi_5 on the slice through pi_vD5, the nearest D4 and the nearest M* (paper, Figure 2), drawn in 3D.
 // Data: a 221 x 181 grid in invariant-metric coordinates (x, y) about pi_vD5, numerical (floating point), not
 // certified. Heights above 6 are coloured warm, so the region where the project-and-lift bound fails stands out.
 // Config: {"data": "../data/landscape_phi5.json", "fallback": "phi5_surface.png"}
@@ -16,7 +16,7 @@ const colour = (v) => (v < 6 ? ramp(LOW, (v - 2) / 4) : ramp(HIGH, (v - 6) / 0.5
 
 export default async function landscape3d(el, cfg) {
   el.classList.add("w-landscape3d");
-  if (!hasWebGL()) return fallback(el, cfg, "Φ₅ over the surface through π_vD₅, D₄ and M*, drawn in 3D");
+  if (!hasWebGL()) return fallback(el, cfg, "Φ₅ over the slice through π_vD₅, D₄ and M*, drawn in 3D");
   const THREE = await import("../vendor/three/three.module.min.js");
   const { OrbitControls } = await import("../vendor/three/OrbitControls.js");
   const D = await (await fetch(new URL(cfg.data || "../data/landscape_phi5.json", import.meta.url))).json();

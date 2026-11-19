@@ -107,18 +107,18 @@ The region where $\Phi_5 > 6$ appears to be a neighbourhood of D₄ and $M_*$, j
 In the paper: Remark 23, Figure 2.
 { .paper-ref }
 
-The picture below shows $\Phi_5$ over a two-dimensional surface in that nine-dimensional space: the lattices reached from $\pi_vD_5$ by heading straight towards D₄, straight towards $M_*$, or anywhere in between. $\pi_vD_5$ is at the origin, D₄ at distance 0.600 and $M_*$ at 0.517. Distances from $\pi_vD_5$ are true distances along each straight-out direction; elsewhere the axes are only coordinates.
+The picture below shows $\Phi_5$ plotted against a two-dimensional slice of the nine-dimensional space of lattices: a flat plane with orthogonal axes in the tangent coordinates at $\pi_vD_5$, the lattices reached by heading straight from $\pi_vD_5$ towards D₄, towards $M_*$, or in between. $\pi_vD_5$ is at the origin, D₄ at distance 0.600 and $M_*$ at 0.517; distances from $\pi_vD_5$ are true distances along each straight-out direction.
 
 <figure class="contour" markdown>
-![Contour map of Phi_5 on a surface through pi_v D5, D4 and M*](assets/img/phi5_contour.png)
-<figcaption>Φ₅ on the surface through π<sub>v</sub>D₅ spanned by the straight-out (geodesic) directions towards the nearest copy of D₄ and the nearest copy of M*. Distances from π<sub>v</sub>D₅ are true distances. The bold curve is Φ₅ = 6. Numerical (floating point), not certified. The paper's Figure 2.</figcaption>
+![Contour map of Phi_5 on a slice through pi_v D5, D4 and M*](assets/img/phi5_contour.png)
+<figcaption>Φ₅ on the slice through π<sub>v</sub>D₅ spanned by the straight-out (geodesic) directions towards the nearest copy of D₄ and the nearest copy of M*. Distances from π<sub>v</sub>D₅ are true distances. The bold curve is Φ₅ = 6. Numerical (floating point), not certified. The paper's Figure 2.</figcaption>
 </figure>
 
 The same data as a landscape you can turn around. Heights are $\Phi_5$, and warm colours mark where it rises above 6. The grey sheet is the level 6, the value of $\eta_5$. Two peaks poke through it, D₄ and the higher $M_*$. The third peak, $\pi_vD_5$, the shadow of D₅, just touches the sheet.
 
-<div class="widget" data-widget="landscape3d" data-config='{"data": "../data/landscape_phi5.json", "fallback": "phi5_surface.png", "fallbackCaption": "Φ₅ over the surface through π_vD₅, D₄ and M*, drawn in 3D."}'></div>
+<div class="widget" data-widget="landscape3d" data-config='{"data": "../data/landscape_phi5.json", "fallback": "phi5_surface.png", "fallbackCaption": "Φ₅ over the slice through π_vD₅, D₄ and M*, drawn in 3D."}'></div>
 
-The surface is two-dimensional, inside the nine-dimensional space of four-dimensional lattices (up to scale), so it can't show everything. It does show why the first stage of the proof has to stop near D₄ and $M_*$, and why it has no trouble near $\pi_vD_5$, whose peak reaches exactly 6 and no higher.
+The slice is two-dimensional, inside the nine-dimensional space of four-dimensional lattices (up to scale), so it can't show everything. It does show why the first stage of the proof has to stop near D₄ and $M_*$, and why it has no trouble near $\pi_vD_5$, whose peak reaches exactly 6 and no higher.
 
 ## What this means for the proof
 
