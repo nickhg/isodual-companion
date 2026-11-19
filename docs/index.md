@@ -8,6 +8,13 @@ A 2007 paper, *Isodual reduction of lattices*, asked a simple question about it.
 
 This is a cousin of a question [Hermite](https://en.wikipedia.org/wiki/Charles_Hermite) asked in 1850, and in five dimensions its answer is exactly 6. This site is a tour of that answer, of the lattice that got in the way of the obvious proof, and of how a computer was made to check about nine billion small cases, and how that check was itself checked.
 
+!!! abstract "What is proved"
+    - $\eta_5 = 6$, attained only by D₅ and its dual D₅\* ([chapter 5](two-ends.md)).
+    - The natural proof, through a four-dimensional bound $\Phi_5$, can't reach 6. Its maximum is at a new lattice $M_*$, at $2^{16}/(3^4\cdot5^3)\approx 6.4727$ ([chapter 7](mstar.md)).
+    - So the proof needs a second, computer-assisted stage, checked by separately written programs; code and data are public ([chapters 8–10](bnb.md)).
+    - Also: $\eta_8 = 2304$ (attained by E₈), and E₆, E₇, E₈ and their duals are strict local maxima ([chapter 11](e-lattices.md)).
+    - Still open: $\eta_6$ and $\eta_7$ ([chapter 12](growth.md)).
+
 ## A cousin of Hermite's question
 
 Hermite's question is about a single vector. Take a lattice in $n$ dimensions, scale it so that its fundamental cell has volume 1, and look at its shortest nonzero vector. How long can that shortest vector be? The answer, squared, is [Hermite's constant](https://en.wikipedia.org/wiki/Hermite_constant) $\gamma_n$. The lattice that attains it is the one that keeps its points as far apart as possible: the densest lattice packing of spheres.
@@ -59,7 +66,7 @@ In two dimensions the flag has only one interesting step, so $\eta$ is just Herm
 In the paper: Theorems A, 7, 8 and 14, Proposition 6.
 { .paper-ref }
 
-Five is the dimension where Korkine and Zolotarev settled Hermite's constant, with D₅. Ask their question about the whole basis instead of its first vector, and dimension five gives the same answer, D₅, except that now its dual D₅* ties with it.
+Five is the dimension where Korkine and Zolotarev settled Hermite's constant, with D₅. Ask their question about the whole basis instead of its first vector, and dimension five gives the same answer, D₅, except that now its dual D₅* ties with it. The proof has a twist. The obvious route goes through four-dimensional lattices, and one would expect D₄ to be the hardest case there. It isn't: a lattice that doesn't seem to appear in the literature, called [M\*](mstar.md) here, gets in the way, and the proof has to go around it.
 
 Dimensions 6 and 7 are open. There is a conjecture, that the answers are attained by [E₆](https://en.wikipedia.org/wiki/E6_lattice) and [E₇](https://en.wikipedia.org/wiki/E7_lattice) with values $128\sqrt3/9 \approx 24.63$ and $144$. Both are proved to be strict local maxima, but nobody has shown that nothing else does better. Chapter 11 has the details.
 
