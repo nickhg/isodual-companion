@@ -36,9 +36,7 @@ $$
 
 Stage 2 searches over all of $(S, \varphi, r)$ with $S$ in the box: 9 coordinates for $S$, 4 for $\varphi$ and 1 for $r$, fourteen in all. The ranges are small.
 
-- **$\varphi$:** adding multiples of $v$ to the $b_i'$, and flipping the sign of $v$, bring $\varphi$ into $[0, \tfrac12] \times [-\tfrac12, \tfrac12]^3$.
-- **$r$, from above:** $r \le \gamma_5 = 8^{1/5}$, by Korkine and Zolotarev.
-- **$r$, from below:** $r \ge 2^{2/5}$. Below that, the split along $v$ gives $\eta(L) \le r^{5/2}\eta(M) \le 3r^{5/2} < 6$.
+Adding multiples of $v$ to the $b_i'$, and flipping the sign of $v$, bring $\varphi$ into $[0, \tfrac12] \times [-\tfrac12, \tfrac12]^3$. From above, $r \le \gamma_5 = 8^{1/5}$, by Korkine and Zolotarev. From below, $r \ge 2^{2/5}$: for smaller $r$, the split along $v$ gives $\eta(L) \le r^{5/2}\eta(M) \le 3r^{5/2} < 6$.
 
 In the paper: proof of Theorem 14.
 { .paper-ref }
@@ -49,10 +47,10 @@ So $r$ lives in the narrow interval $[2^{2/5}, 8^{1/5}] \approx [1.320, 1.516]$,
 
 A stage-2 cell closes when one of four things holds on all of it.
 
-- **(N) Not shortest.** There is an explicit lattice vector strictly shorter than $v$. Then this description of $L$, with $v$ as a shortest vector, doesn't arise.
-- **(F) One flag.** A single integer flag of $L$ has potential below 6 everywhere on the cell. Or the splitting inequality along one of its sublattices does, using the known values of $\eta_1, \dots, \eta_4$.
-- **(P) A mixture.** No single flag bound works on the whole cell, but a weighted average of several does. Since $\log\eta(L)$ is at most each of them, it is at most their average.
-- **(B) The ball.** The cell lies within distance $1/10$ of a Gram matrix of D₅ or D₅\*, so Theorem 13 gives $\eta \le 6$ with equality only at the centre.
+- (N) Not shortest. There is an explicit lattice vector strictly shorter than $v$. Then this description of $L$, with $v$ as a shortest vector, doesn't arise.
+- (F) One flag. A single integer flag of $L$ has potential below 6 everywhere on the cell. Or the splitting inequality along one of its sublattices does, using the known values of $\eta_1, \dots, \eta_4$.
+- (P) A mixture. No single flag bound works on the whole cell, but a weighted average of several does. Since $\log\eta(L)$ is at most each of them, it is at most their average.
+- (B) The ball. The cell lies within distance $1/10$ of a Gram matrix of D₅ or D₅\*, so Theorem 13 gives $\eta \le 6$ with equality only at the centre.
 
 Here is how many of each the final certificate has:
 

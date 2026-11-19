@@ -6,10 +6,9 @@ The answer is the way the work is split up. The part that does the hard thinking
 
 ## Producer and checker
 
-Two different kinds of program are involved.
+Two different kinds of program are involved. The **producers** (`certify` for the shadow searches, `stage2` for the lifts) do the searching. They decide where to split, which flag to try and which weights to mix. They are written for speed, use plain floating point, and may contain bugs. Their output is a log, a list of boxes, each with a claimed reason for closing. A log is only a *candidate*.
 
-- **The producers** (`certify` for the shadow searches, `stage2` for the lifts) do the searching. They decide where to split, which flag to try and which weights to mix. They are written for speed, use plain floating point, and may contain bugs. Their output is a log, a list of boxes, each with a claimed reason for closing. A log is only a *candidate*.
-- **The checkers** (`check_phi` and `check_lift`) read a log and re-prove every leaf from scratch, with their own bounds, in interval arithmetic. They share nothing with the producers except the coordinates and the log format. A checker may cut a leaf into smaller pieces if its own bounds need that, but it never trusts the producer's word.
+The **checkers** (`check_phi` and `check_lift`) read a log and re-prove every leaf from scratch, with their own bounds, in interval arithmetic. They share nothing with the producers except the coordinates and the log format. A checker may cut a leaf into smaller pieces if its own bounds need that, but it never trusts the producer's word.
 
 In the paper: Appendices C and E.
 { .paper-ref }

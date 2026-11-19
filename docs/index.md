@@ -2,11 +2,11 @@
 
 When LLL finishes, it is because a single number has stopped going down.
 
-That number is the product of the squared volumes of the first one, two, three, … basis vectors: the squared length of $b_1$, times the squared area of the parallelogram on $b_1, b_2$, times the squared volume of the box on $b_1, b_2, b_3$, and so on up to the whole basis. Lenstra, Lenstra and Lovász called it $D$ and used it as the "potential" in their proof that the algorithm terminates. Every swap LLL makes shrinks it by a constant factor, and it cannot shrink forever, so LLL stops.
+That number is the product of the squared volumes of the first one, two, three, … basis vectors: the squared length of $b_1$, times the squared area of the parallelogram on $b_1, b_2$, times the squared volume of the box on $b_1, b_2, b_3$, and so on up to the whole basis. It is essentially the quantity Lenstra, Lenstra and Lovász call $D$ (theirs leaves out the volume of the whole lattice, which never changes), and they used it as the "potential" in their proof that the algorithm terminates. Every swap LLL makes shrinks it by a constant factor, and it cannot shrink forever, so LLL stops.
 
-A 2007 paper, *Isodual reduction of lattices*, asked a simple question about it. If you are allowed to pick the best possible basis, how large can that number be forced to be? Put differently: which lattice is the most stubborn, the one whose best basis still has the largest potential?
+A 2007 paper, *Isodual reduction of lattices*, asked a simple question about it. If you are allowed to pick the best possible basis, how large can that number be forced to be? Put differently, which lattice is the most stubborn, the one whose best basis still has the largest potential?
 
-It turns out that this is a cousin of a question Hermite asked in 1850, and in five dimensions its answer is exactly 6. This site is a tour of that answer, of the lattice that nearly broke the proof, and of how a computer was made to check about nine billion small cases without anyone having to take its word for it.
+This is a cousin of a question Hermite asked in 1850, and in five dimensions its answer is exactly 6. This site is a tour of that answer, of the lattice that got in the way of the obvious proof, and of how a computer was made to check about nine billion small cases, and how that check was itself checked.
 
 ## A cousin of Hermite's question
 
@@ -16,7 +16,7 @@ In two dimensions the answer is the hexagonal lattice, the pattern of a honeycom
 
 The 2007 question is the same kind of question, but about the whole basis rather than its first vector. A basis gives you a nested chain of subspaces: the line through $b_1$, the plane through $b_1$ and $b_2$, the 3-space through the first three, and so on. That chain is called a *flag*. Hermite asks how big the first step of the best flag can be forced to be. The LLL potential multiplies all the steps together.
 
-Why care about all the steps? Because reduction algorithms do. LLL, and the deeper algorithms built on it (PotLLL, DeepBKZ and their relatives), don't only want a short first vector. They want every step of the basis to be reasonably small, not just the first. A bound that controls the whole flag says something about all of it at once.
+Why care about all the steps? Because reduction algorithms do. LLL, and the deeper algorithms built on it (PotLLL, DeepBKZ and their relatives), don't only want a short first vector. They want every step of the basis to be reasonably small, not just the first.
 
 ## The number we are after
 
@@ -59,20 +59,15 @@ In two dimensions the flag has only one interesting step, so $\eta$ is just Herm
 In the paper: Theorems A, 7, 8 and 14, Proposition 6.
 { .paper-ref }
 
+Five is the dimension where Korkine and Zolotarev settled Hermite's constant, with D₅. Ask their question about the whole basis instead of its first vector, and dimension five gives the same answer, D₅, except that now its dual D₅* ties with it.
+
 Dimensions 6 and 7 are open. There is a conjecture, that the answers are attained by E₆ and E₇ with values $128\sqrt3/9 \approx 24.63$ and $144$. Both are proved to be strict local maxima, but nobody has shown that nothing else does better. Chapter 11 has the details.
 
 Bertrand Meyer, in his 2008 thesis, put these constants inside a larger family, the *generalized Hermite constants* of Watanabe and Meyer, one for each way of chopping up a flag. The constant here is the "staircase" case, the one that uses every step. Meyer observed that very little was known about explicit values of these constants. For the staircase, no explicit value seems to have been known in dimension five or higher.
 
-Five is the dimension where Korkine and Zolotarev settled Hermite's constant, with D₅. Ask their question about the whole basis instead of its first vector, and dimension five gives the same answer, D₅, except that now its dual D₅* ties with it.
-
 ## How to read this site
 
-The chapters build on each other, but you can dip in.
-
-- **Foundations** (chapters 2–4) cover lattices, duals, flags and the potential, then the small dimensions. If you know what a Gram matrix is, skim them.
-- **Dimension five** (chapters 5–7) is the heart of it. It covers why D₅ and its dual both win, the natural proof, and the strange lattice M\* that stops the natural proof just short.
-- **The proof** (chapters 8–10) explains the computer-assisted part: branch and bound in a dimension you can watch, the two stages of the real search, and what you have to trust.
-- **Beyond** (chapters 11–12) covers the E-lattices, growth in high dimension, what this means for lattice reduction, and the open problems.
+The chapters build on each other, but you can dip in. Chapters 2–4 cover lattices, duals, flags and the potential, then the small dimensions; if you know what a Gram matrix is, skim them. Chapters 5–7 are the heart of it: why D₅ and its dual both win, the natural proof, and the strange lattice M\* that stops the natural proof just short. Chapters 8–10 explain the computer-assisted part, from branch and bound in a dimension you can watch to the two stages of the real search and what you have to trust. Chapters 11 and 12 cover the E-lattices, growth in high dimension, what all this means for lattice reduction, and the open problems.
 
 Hover over or tap a lattice name like D₄ anywhere on the site for a one-line reminder, or see the [glossary](glossary.md). Small grey notes like the ones above point to the theorem in the paper that backs each claim. Everything here comes from the paper or from the certificate repository. Where something is numerical evidence rather than proof, the text says so.
 

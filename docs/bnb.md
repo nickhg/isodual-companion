@@ -36,9 +36,9 @@ The starting box is $-0.4 \le y \le \log(4/\pi)$, $0 \le \mu \le \tfrac12$. The 
 
 A box closes when one of three things holds on all of it.
 
-- **(D) No Ψ-minimal basis here** (grey). On the whole box, $b_2$ is strictly shorter than $b_1$, so swapping them gives a better basis and nothing in the box is minimal. In coordinates: $\mu^2 + e^{-2y} < 1$.
-- **(A) The bound is below the threshold** (green). In two dimensions $\Psi^2 = e^y$, so the box closes if $e^y < 2/\sqrt3$ on all of it.
-- **(B) Inside the ball** (blue). The box lies within a small distance of the hexagonal lattice, where a separate local theorem says $\eta \le 2/\sqrt3$ with equality only at the centre.
+- (D) No Ψ-minimal basis here (grey). On the whole box, $b_2$ is strictly shorter than $b_1$, so swapping them gives a better basis and nothing in the box is minimal. In coordinates: $\mu^2 + e^{-2y} < 1$.
+- (A) The bound is below the threshold (green). In two dimensions $\Psi^2 = e^y$, so the box closes if $e^y < 2/\sqrt3$ on all of it.
+- (B) Inside the ball (blue). The box lies within a small distance of the hexagonal lattice, where a separate local theorem says $\eta \le 2/\sqrt3$ with equality only at the centre.
 
 Box outlines are boxes still waiting. Press *Step* to process one box, or *Run* to let it go.
 
@@ -65,8 +65,8 @@ That is exactly what the first stage of the real proof does. Its threshold is 6,
 
 In two dimensions every test is a one-line inequality. In the paper's four-dimensional search they are more work, but the logic is the same.
 
-- **(D)** uses a list of ways a basis can fail to be minimal: a window of consecutive vectors that is too steep, a deep insertion or an elementary change that lowers $\Psi^2$ on the whole box, and the same tests for the reversed dual basis.
-- **(A)** has to bound both factors of $\Phi_5 = \kappa^2\eta$. For $\eta$ it takes a good integer flag at the centre of the box and uses the concavity of $\log\det$ to bound that flag's potential over the whole box. For $\kappa$ it runs a second small branch and bound, over the torus of lifting forms $\varphi$, to show that every $\varphi$ leaves some short vector too close to the plane.
+- (D) uses a list of ways a basis can fail to be minimal: a window of consecutive vectors that is too steep, a deep insertion or an elementary change that lowers $\Psi^2$ on the whole box, and the same tests for the reversed dual basis.
+- (A) has to bound both factors of $\Phi_5 = \kappa^2\eta$. For $\eta$ it takes a good integer flag at the centre of the box and uses the concavity of $\log\det$ to bound that flag's potential over the whole box. For $\kappa$ it runs a second small branch and bound, over the torus of lifting forms $\varphi$, to show that every $\varphi$ leaves some short vector too close to the plane.
 
 In the paper: Appendix C, "(D)" and "(A)".
 { .paper-ref }

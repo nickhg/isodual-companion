@@ -21,7 +21,7 @@ $$
 
 Its shortest vectors are the ten unit vectors $\pm e_i$, of squared length 1. The half-integer points have squared length at least $5/4$, so they are longer. As a sphere packing D₅\* is mediocre. Its Hermite invariant is $\gamma(D_5^*) = 2^{2/5} \approx 1.32$, well below $\gamma_5 \approx 1.52$. If you only care about the first vector, D₅\* is nowhere near the top.
 
-Yet for the whole flag, D₅\* does exactly as well as D₅. Here are their best staircases side by side, with D₅\* scaled by 2 so that its first step matches:
+Yet for the whole flag, D₅\* does exactly as well as D₅. Their best staircases are side by side below, with D₅\* scaled by 2 so that its first step matches.
 
 <div class="widget" data-widget="staircase" data-config='{"lattices": ["D5", "D5*"]}'></div>
 
@@ -54,13 +54,7 @@ In the paper: the remark "Vectors and flags" after Theorem 14.
 
 ## The same pattern elsewhere
 
-The pattern shows up in every dimension where the answer is known or conjectured.
-
-- **Dimension 3:** $\eta_3 = 3/2$ is attained by fcc and bcc, A₃ and A₃\*.
-- **Dimension 4:** D₄ is similar to its own dual, so it is its own partner and the winner is unique.
-- **Dimension 5:** D₅ and D₅\*.
-- **Dimensions 6 and 7 (conjectured):** E₆ and E₆\*, E₇ and E₇\*.
-- **Dimension 8:** E₈ is its own dual.
+The pattern shows up wherever the answer is known or conjectured. In dimension 3, fcc and bcc tie for $\eta_3 = 3/2$. D₄ and E₈ are their own duals, so each is its own partner and wins alone. In dimensions 6 and 7 the conjectured winners come in pairs again, E₆ with E₆\* and E₇ with E₇\*.
 
 So two winners isn't a defect of the theorem. A question that weighs the first and last steps of a basis equally should be expected to have a lattice and its dual as joint answers.
 
@@ -76,8 +70,9 @@ $$
 
 Both D₅ and D₅\* meet this with equality, but in different ways.
 
-- **D₅:** squash along a root, such as $v = (0,0,0,1,1)$. The shadow is D₄ with one coordinate axis shrunk by $1/\sqrt2$. Its $\eta$ is $3/\sqrt2$, and D₅ has $\gamma^{5/2} = (8^{1/5})^{5/2} = 2\sqrt2$, so the bound is $2\sqrt2 \cdot 3/\sqrt2 = 6$. The first vector is as long as possible, and the shadow is not the best four-dimensional lattice.
-- **D₅\*:** squash along $e_1$. The shadow is $\mathbb Z^4 \cup (\mathbb Z^4 + \tfrac12\mathbf 1)$, which is D₄\*, a copy of D₄ itself, the best four-dimensional lattice, with $\eta = 3$. Here $\gamma^{5/2} = (2^{2/5})^{5/2} = 2$, and the bound is $2 \cdot 3 = 6$. The first vector is short, but the shadow is perfect.
+For D₅, squash along a root, such as $v = (0,0,0,1,1)$. The shadow is D₄ with one coordinate axis shrunk by $1/\sqrt2$. Its $\eta$ is $3/\sqrt2$, and D₅ has $\gamma^{5/2} = (8^{1/5})^{5/2} = 2\sqrt2$, so the bound is $2\sqrt2 \cdot 3/\sqrt2 = 6$. The first vector is as long as possible, and the shadow is not the best four-dimensional lattice.
+
+For D₅\*, squash along $e_1$. The shadow is $\mathbb Z^4 \cup (\mathbb Z^4 + \tfrac12\mathbf 1)$, which is D₄\*, a copy of D₄ itself, the best four-dimensional lattice, with $\eta = 3$. Here $\gamma^{5/2} = (2^{2/5})^{5/2} = 2$, and the bound is $2 \cdot 3 = 6$. The first vector is short, but the shadow is perfect.
 
 In the paper: §6, before Proposition 21, and the display after Remark 23.
 { .paper-ref }

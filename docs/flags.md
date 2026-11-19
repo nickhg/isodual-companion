@@ -51,8 +51,7 @@ That is exactly what LLL does. When LLL swaps two neighbouring vectors because t
 
 Two facts about bases that minimise $\Psi^2$ follow straight from the definition.
 
-- **No neighbour swap helps.** In a basis of smallest potential, $r_{i+1} \ge \tfrac34 r_i$ for every $i$, the same inequality LLL ends with (with its parameter at the extreme value 1).
-- **Every block is itself optimal.** If you take a run of consecutive vectors $b_i, \dots, b_j$ and project away the earlier ones, that block is a best basis of the lattice it spans. Changing it alters only the volumes inside the block, by exactly the block's own potential.
+No neighbour swap helps. In a basis of smallest potential, $r_{i+1} \ge \tfrac34 r_i$ for every $i$, the same inequality LLL ends with (with its parameter at the extreme value 1). Every block is itself optimal. If you take a run of consecutive vectors $b_i, \dots, b_j$ and project away the earlier ones, that block is a best basis of the lattice it spans. Changing it alters only the volumes inside the block, by exactly the block's own potential.
 
 In the paper: §2, "Heredity", and §9.
 { .paper-ref }

@@ -36,8 +36,8 @@ Perturb the lattice a little, in some direction $\Lambda$. Each Ψ-minimal flag 
 
 Now use the symmetry group. E₆, E₇ and E₈ have large groups of symmetries, the Weyl groups, and they move the root flag around to a whole orbit of minimal flags. Two facts about that orbit hold.
 
-1. **The $C_f$ average to zero.** The average is fixed by all the symmetries, and for these lattices the only matrix fixed by all of them in the relevant space is zero.
-2. **They spread equally in every direction.** The sum $\sum_f \langle C_f, \Lambda\rangle^2$ is the same for every unit direction $\Lambda$. This is [Schur's lemma](https://en.wikipedia.org/wiki/Schur%27s_lemma): the Weyl group acts *irreducibly* on the space of directions (traceless symmetric matrices, of dimension 20, 27 and 35), so any symmetric quantity built from it is a multiple of the identity.
+1. The $C_f$ average to zero. The average is fixed by all the symmetries, and for these lattices the only matrix fixed by all of them in the relevant space is zero.
+2. They spread equally in every direction. The sum $\sum_f \langle C_f, \Lambda\rangle^2$ is the same for every unit direction $\Lambda$. This is [Schur's lemma](https://en.wikipedia.org/wiki/Schur%27s_lemma): the Weyl group acts *irreducibly* on the space of directions (traceless symmetric matrices, of dimension 20, 27 and 35), so any symmetric quantity built from it is a multiple of the identity.
 
 Together these say the first-order changes have mean zero and a fixed, positive spread in every direction. Numbers with mean zero and positive spread can't all be positive, so some flag must go *down*, by at least a fixed fraction of the distance moved. Making that precise gives an explicit rate, $r = \sqrt{70}/40$, $2\sqrt7/27$ and $\sqrt{42}/35$ for E₆, E₇ and E₈. Combined with a bound on the second-order terms, it gives the radii above. For E₆ an exact linear-programming certificate improves the rate to $3/10$ and the radius to $1/10$.
 
@@ -59,7 +59,7 @@ The exact first-order rates are now known at D₄, where $r = 2/3$, and at D₅,
 
 ## What remains open
 
-**Dimensions 6 and 7.** The proved bounds are
+For dimensions 6 and 7, the proved bounds are these.
 
 | $n$ | lower bound | upper bound |
 |---|---|---|
@@ -74,4 +74,4 @@ The upper bounds come from the splitting inequality. Closing the gap would need 
 In the paper: Conjecture 30, §7.1.
 { .paper-ref }
 
-**Uniqueness of E₈.** E₈ attains $\eta_8 = 2304$, and nothing near it does. Whether anything far away also does is open. One route would go through $\eta_7$: if $\eta_7 = 144$, then any lattice attaining 2304 must be critical, and so must be E₈.
+The other open question here is the uniqueness of E₈. It attains $\eta_8 = 2304$, and nothing near it does. Whether anything far away also does is open. One route would go through $\eta_7$: if $\eta_7 = 144$, then any lattice attaining 2304 must be critical, and so must be E₈.

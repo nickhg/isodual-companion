@@ -46,7 +46,8 @@ version, commit 0b3340c of the paper repo) or from the certificate repository (r
    **Added after the first pass:** the paper's Figure 2 contour map (image `phi5_contour.png` from `runs/landscape` of
    the working repo) and a 3D surface widget `landscape3d` built from the same grid (221 × 181 points, step 0.005,
    `docs/assets/data/landscape_phi5.json`). The values are numerical, as the paper says; warm colours mark Φ₅ > 6. That
-   grid is not in the public certificate repo's `numerics/`. Nick: add it there?
+   grid is not in the public certificate repo's `numerics/`. Until it is added there (proposed for the next release of
+   isodual_constant, with grid.py and plot.py), the site's JSON is the public copy of that data.
 8. **bnb.md.** App. C coordinates and leaf types, cut to n = 2. Floating point with margin 1e-9, labelled illustration.
 9. **two-stages.md.** Thm 14 proof, Thms 19–20, Apps C–E. The stage-1 leaf count is 3.25×10⁸ (App. E); the intro of the
    paper rounds it to 3.2×10⁸.
@@ -56,6 +57,11 @@ version, commit 0b3340c of the paper repo) or from the certificate repository (r
     §7.2, Thm 13 / App. A (720 flags, r ≥ 0.2392, 4 ⊕ 10). The Schur/averaging explanation is informal. Check it.
 12. **growth.md.** Thm 31, Cor. 32 (a ≈ 0.8345, b ≈ 0.6955), Thm 35, Cor. 36–37, §9 numerics, §10 open problems
     (paraphrased, all nine).
+
+## Tone pass (18 Nov, after Web Claude's read of chapters 1, 5, 7)
+- Bold-lead bullet lists unbolded or turned into prose across the site; bold kept only for terms at their definition.
+- Repetitions cut in chapters 1 and 7; colon-hinged sentences reduced; LLL's $D$ described as "essentially" our potential.
+- The 5.16 in chapter 7 is kept: it is in the paper (the sentence after the display following Remark 23, numerical).
 
 ## Unsure about
 - Density of the "flag" tooltip: every occurrence of "flag" is underlined. It may be too much. It's easy to drop from

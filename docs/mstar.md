@@ -8,7 +8,7 @@ That guess was wrong. $\Phi_5$ goes higher, at a lattice that doesn't seem to ap
 
 Take a path through the space of four-dimensional lattices that starts at D₄ and ends at another isodual lattice, $A_2 \otimes A_2$. That lattice is built from two copies of the hexagonal lattice, a "product" of two honeycombs. The path is the straightest one available, a geodesic in the natural metric on Gram matrices (the one that measures how far you have to stretch one Gram matrix to reach another).
 
-Here is $\Phi_5$ along that path:
+The figure below plots $\Phi_5$ along that path.
 
 <div class="widget" data-widget="geodesic" data-config='{"data": "../data/geodesic_phi5.json"}'></div>
 
@@ -38,18 +38,17 @@ with $\kappa(M_*) = \sqrt{12/5}$ and $\eta(M_*) = 2^{14}/(3^5 \cdot 5^2) \approx
 In the paper: Definition 16, Proposition 17.
 { .paper-ref }
 
-It is a curious object. Some of its properties:
+It is a curious object. It is not very dense: its Hermite invariant is $16/\sqrt{135} \approx 1.377$, below D₄'s $\sqrt2 \approx 1.414$, and it has 9 pairs of shortest vectors against D₄'s 12. It has 72 symmetries.
 
-- **It is not very dense.** Its Hermite invariant is $16/\sqrt{135} \approx 1.377$, below D₄'s $\sqrt2 \approx 1.414$. It has 9 pairs of shortest vectors, against D₄'s 12.
-- **It is isodual,** and more precisely *even and 135-modular*. Scale it so that its Gram matrix is $P_0$. Then $135\,P_0^{-1}$ is another even integral Gram matrix of the same lattice.
-- **It is the unique densest lattice in its genus.** The genus of $P_0$, the lattices that look the same as $M_*$ locally at every prime, has six classes, and $M_*$ has the largest minimum among them.
-- **It has 72 symmetries,** $|\mathrm{Aut}(M_*)| = 72$.
-- **It is Hermitian over the Eisenstein integers.** Some of its symmetries act like multiplication by a cube root of unity $\omega$, which makes $M_*$ a rank-2 lattice over $\mathbb Z[\omega]$, with Gram matrix
-  $$
-  H = \begin{pmatrix} 8 & 3 - 2\omega \\ 3 - 2\bar\omega & 8 \end{pmatrix}, \qquad \det H = 45.
-  $$
-  The [Eisenstein integers](https://en.wikipedia.org/wiki/Eisenstein_integer) are the hexagonal lattice viewed as numbers, so in this sense $M_*$ is a "hexagonal lattice of hexagonal lattices", glued in a twisted way.
-- **It is symplectic,** in the sense of Bergé and Buser–Sarnak: up to scale it lies on families of lattices that carry a [symplectic](https://en.wikipedia.org/wiki/Symplectic_vector_space) structure, as NTRU lattices do.
+It is isodual, and more precisely *even and 135-modular*. Scale it so that its Gram matrix is $P_0$, and $135\,P_0^{-1}$ is another even integral Gram matrix of the same lattice. It is also the unique densest lattice in its genus. The genus of $P_0$, the lattices that look the same as $M_*$ locally at every prime, has six classes, and $M_*$ has the largest minimum among them.
+
+Some of its symmetries act like multiplication by a cube root of unity $\omega$. That makes $M_*$ a rank-2 lattice over the [Eisenstein integers](https://en.wikipedia.org/wiki/Eisenstein_integer) $\mathbb Z[\omega]$, with Gram matrix
+
+$$
+H = \begin{pmatrix} 8 & 3 - 2\omega \\ 3 - 2\bar\omega & 8 \end{pmatrix}, \qquad \det H = 45.
+$$
+
+The Eisenstein integers are the hexagonal lattice viewed as numbers, so in this sense $M_*$ is a hexagonal lattice of hexagonal lattices, glued in a twisted way. Finally, it is symplectic, in the sense of Bergé and Buser–Sarnak. Up to scale it lies on families of lattices that carry a [symplectic](https://en.wikipedia.org/wiki/Symplectic_vector_space) structure, as NTRU lattices do.
 
 In the paper: Proposition 17 (4)–(8) and §6.
 { .paper-ref }
@@ -90,18 +89,14 @@ $$
 
 nowhere near 6.47. The inequality $\eta(L) \le \gamma(L)^{5/2}\,\eta(\pi_vL)$ loses almost everything here. Numerically, the lifts over $M_*$ with the largest $\eta$ reach only about 5.16.
 
-In the paper: Remark 18, the display after Remark 23.
+In the paper: Remark 18; the display after Remark 23 and the sentence after it (5.16, numerical).
 { .paper-ref }
 
-Seen from five dimensions, the picture is clear. Each of the three peaks loses in a different place.
-
-- **D₅:** neither inequality is lost, and $\eta(D_5) = \Phi_5(\pi_vD_5) = 6$.
-- **D₅\*:** the $\kappa$ step is lost, by the factor $(36/35)^2$, and $6 < \Phi_5(D_4) \approx 6.348$.
-- **$L_*$:** the splitting step is lost, and $3.888 < \Phi_5(M_*) \approx 6.4727$.
+Each of the three peaks loses in a different place. At D₅ neither inequality is lost, and $\eta(D_5) = \Phi_5(\pi_vD_5) = 6$. At D₅\* the $\kappa$ step is lost, by the factor $(36/35)^2$, so $6 < \Phi_5(D_4) \approx 6.348$. At $L_*$ the splitting step is lost, and $3.888 < \Phi_5(M_*) \approx 6.4727$.
 
 ## The landscape
 
-The geodesic is one line through a nine-dimensional space. A wider view, still numerical, suggests that $\Phi_5$ has three peaks that matter:
+The geodesic is one line through a nine-dimensional space. A wider view, still numerical, suggests that $\Phi_5$ has three peaks that matter.
 
 - the shadow of D₅, $\pi_vD_5$, at exactly 6, a sharp local maximum (proved);
 - D₄, at about 6.348, which appears to be a local maximum (numerical);
@@ -112,14 +107,14 @@ The region where $\Phi_5 > 6$ appears to be a neighbourhood of D₄ and $M_*$, j
 In the paper: Remark 23, Figure 2.
 { .paper-ref }
 
-Here is that picture: $\Phi_5$ on the flat slice through all three lattices. The coordinates are true distances from $\pi_vD_5$, which sits at the origin. D₄ is at distance 0.600 and $M_*$ at 0.517. The bold curve is $\Phi_5 = 6$.
+The picture below is $\Phi_5$ on the flat slice through all three lattices, with $\pi_vD_5$ at the origin, D₄ at distance 0.600 and $M_*$ at 0.517.
 
 <figure class="contour" markdown>
 ![Contour map of Phi_5 on the plane through pi_v D5, D4 and M*](assets/img/phi5_contour.png)
 <figcaption>Φ₅ on the 2-plane through π<sub>v</sub>D₅, the nearest copy of D₄ and the nearest copy of M*, in coordinates that measure true distance from π<sub>v</sub>D₅. The bold curve is Φ₅ = 6. Numerical (floating point), not certified. The paper's Figure 2.</figcaption>
 </figure>
 
-The same data as a landscape you can turn around. Heights are $\Phi_5$, and warm colours mark where it rises above 6. The grey sheet is the level 6, the value of $\eta_5$. A proof through $\Phi_5$ alone would need the whole surface below that sheet. Two peaks poke through, D₄ and the higher $M_*$, joined by a pass at about 6.28. The third peak, $\pi_vD_5$, the shadow of D₅, just touches the sheet.
+The same data as a landscape you can turn around. Heights are $\Phi_5$, and warm colours mark where it rises above 6. The grey sheet is the level 6, the value of $\eta_5$. Two peaks poke through it, D₄ and the higher $M_*$. The third peak, $\pi_vD_5$, the shadow of D₅, just touches the sheet.
 
 <div class="widget" data-widget="landscape3d" data-config='{"data": "../data/landscape_phi5.json", "fallback": "phi5_surface.png", "fallbackCaption": "Φ₅ on the plane through π_vD₅, D₄ and M*, drawn as a surface."}'></div>
 
@@ -129,6 +124,6 @@ This is a two-dimensional slice of a nine-dimensional landscape, so it can't sho
 
 The paper's search does the following. A first computer search over four-dimensional shadows shows $\Phi_5 < 6$ everywhere except in a small region around D₄ and $M_*$, and collects the boxes it cannot close. A second search goes back up to five dimensions over just those boxes, and bounds the actual lifts directly, without passing through $\Phi_5$. Numerically, the lifts over $M_*$ stay far from 6, so the second stage has room, and the lifts over D₄ reach 6 only at D₅\* itself.
 
-The obvious candidate turned out not to be the answer. The lattice that is the answer to the four-dimensional question, $M_*$, has nothing to do with the five-dimensional one, except that it got in the way.
+The obvious candidate turned out not to be the answer. The lattice where $\Phi_5$ is highest, $M_*$, has nothing to do with the five-dimensional answer, except that it got in the way.
 
 The next three chapters show how the computer search works and why it can be trusted.

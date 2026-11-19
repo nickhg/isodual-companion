@@ -65,15 +65,15 @@ The paper doesn't propose a new algorithm. Its contribution to reduction is stru
 
 ## Open problems, in plain language
 
-1. **A shorter proof that $\eta_5 = 6$.** Almost all of the nine billion leaves are spent on lifts over a region where, numerically, $\eta$ stays far from 6. A sharper version of the project-and-lift bound, one that sees how loose it is over $M_*$, or a local argument at D₅\*, might replace most of the computation.
-2. **$\eta_6$ and $\eta_7$.** Prove the conjecture. In dimension 6 the reduction to $\Phi_6$ may be enough on its own.
-3. **Why torsion points?** At every known peak of $\Phi_5$ and $\Phi_6$, the best lifting forms are torsion points: of order 2 at the shadow of D₅, 3 at $M_*$, 6 at D₄. Is that always so?
-4. **Hermitian and symplectic structure.** $M_*$ turned out to be Hermitian over the Eisenstein integers and symplectic. Do the lattices that block the reduction in other dimensions have the same kind of structure?
-5. **Is E₈ the only lattice with $\eta = 2304$?** It is the only one nearby.
-6. **Exact local rates for E₆ and E₇.** These are known for D₄ and D₅. For E₆ and E₇ only bounds are known, and numerically the upper bounds are the truth.
-7. **The second-order term** in the growth of $\eta_n$, which is tied to the same question for Hermite's constant.
-8. **Is $\mu_m = \gamma_m$ for all $m$?** Failing that, is $\mu_m$ polynomial in $m$? And is there a direct proof that $\mu_5 = \gamma_5$, one that doesn't go through the whole computer search?
-9. **Symplectic bases.** For symplectic lattices, such as NTRU lattices, one can restrict to symplectic bases. Does every symplectic lattice have a symplectic basis of minimal potential?
+1. A shorter proof that $\eta_5 = 6$. Almost all of the nine billion leaves are spent on lifts over a region where, numerically, $\eta$ stays far from 6. A sharper version of the project-and-lift bound, one that sees how loose it is over $M_*$, or a local argument at D₅\*, might replace most of the computation.
+2. $\eta_6$ and $\eta_7$. Prove the conjecture. In dimension 6 the reduction to $\Phi_6$ may be enough on its own.
+3. Why torsion points? At every known peak of $\Phi_5$ and $\Phi_6$, the best lifting forms are torsion points: of order 2 at the shadow of D₅, 3 at $M_*$, 6 at D₄. Is that always so?
+4. Hermitian and symplectic structure. $M_*$ turned out to be Hermitian over the Eisenstein integers and symplectic. Do the lattices that block the reduction in other dimensions have the same kind of structure?
+5. Is E₈ the only lattice with $\eta = 2304$? It is the only one nearby.
+6. Exact local rates for E₆ and E₇. These are known for D₄ and D₅. For E₆ and E₇ only bounds are known, and numerically the upper bounds are the truth.
+7. The second-order term in the growth of $\eta_n$, which is tied to the same question for Hermite's constant.
+8. Is $\mu_m = \gamma_m$ for all $m$? Failing that, is $\mu_m$ polynomial in $m$? And is there a direct proof that $\mu_5 = \gamma_5$, one that doesn't go through the whole computer search?
+9. Symplectic bases. For symplectic lattices, such as NTRU lattices, one can restrict to symplectic bases. Does every symplectic lattice have a symplectic basis of minimal potential?
 
 In the paper: §10.
 { .paper-ref }
