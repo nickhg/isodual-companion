@@ -129,7 +129,7 @@ Drag the point in the plane of $(X, Y)$. The table compares the three places $e$
 
 <div class="widget" data-widget="psikz"></div>
 
-The 2007 paper's reason for preferring the potential is duality. With the shortest vector first, the basis would be better reduced than its reversed dual basis in KZ's sense, so the primal and the dual would be treated differently. The potential treats a lattice and its dual exactly alike, as the end of this chapter shows. [Chapter 3](flags.md#the-two-ends-of-a-flag) comes back to this in the language of the two ends of a flag.
+The 2007 paper's reason for preferring the potential is duality. For the lattice above, $e$ is the shortest vector of the dual lattice too, so KZ puts it first in the dual as well. But reading the KZ basis of $L$ dually and backwards puts $e$ last. So KZ reduces this lattice and its dual differently, while Ψ treats them alike: a Ψ-minimal basis, read dually and backwards, is a Ψ-minimal basis of the dual, as the end of this chapter shows. [Chapter 3](flags.md#the-two-ends-of-a-flag) comes back to this in the language of the two ends of a flag.
 
 ## The dual lattice
 
