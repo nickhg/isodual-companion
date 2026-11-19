@@ -112,6 +112,19 @@ The region where $\Phi_5 > 6$ appears to be a neighbourhood of D₄ and $M_*$, j
 In the paper: Remark 23, Figure 2.
 { .paper-ref }
 
+Here is that picture: $\Phi_5$ on the flat slice through all three lattices. The coordinates are true distances from $\pi_vD_5$, which sits at the origin. D₄ is at distance 0.600 and $M_*$ at 0.517. The bold curve is $\Phi_5 = 6$.
+
+<figure class="contour" markdown>
+![Contour map of Phi_5 on the plane through pi_v D5, D4 and M*](assets/img/phi5_contour.png)
+<figcaption>Φ₅ on the 2-plane through π<sub>v</sub>D₅, the nearest copy of D₄ and the nearest copy of M*, in coordinates that measure true distance from π<sub>v</sub>D₅. The bold curve is Φ₅ = 6. Numerical (floating point), not certified. The paper's Figure 2.</figcaption>
+</figure>
+
+The same data as a landscape you can turn around. Heights are $\Phi_5$, and warm colours mark where it rises above 6. The grey sheet is the level 6, the value of $\eta_5$. A proof through $\Phi_5$ alone would need the whole surface below that sheet. Two peaks poke through, D₄ and the higher $M_*$, joined by a pass at about 6.28. The third peak, $\pi_vD_5$, the shadow of D₅, just touches the sheet.
+
+<div class="widget" data-widget="landscape3d" data-config='{"data": "../data/landscape_phi5.json", "fallback": "phi5_surface.png", "fallbackCaption": "Φ₅ on the plane through π_vD₅, D₄ and M*, drawn as a surface."}'></div>
+
+This is a two-dimensional slice of a nine-dimensional landscape, so it can't show everything. It does show why the first stage of the proof has to stop near D₄ and $M_*$, and why it has no trouble near $\pi_vD_5$, whose peak reaches exactly 6 and no higher.
+
 ## What this means for the proof
 
 The paper's search does the following. A first computer search over four-dimensional shadows shows $\Phi_5 < 6$ everywhere except in a small region around D₄ and $M_*$, and collects the boxes it cannot close. A second search goes back up to five dimensions over just those boxes, and bounds the actual lifts directly, without passing through $\Phi_5$. Numerically, the lifts over $M_*$ stay far from 6, so the second stage has room, and the lifts over D₄ reach 6 only at D₅\* itself.

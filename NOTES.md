@@ -43,6 +43,10 @@ version, commit 0b3340c of the paper repo) or from the certificate repository (r
    `numerics/geodesic_phi5.txt` (lower Φ₅ bracket, s = t ln 2) with the three exact marks. Note that the curve dips
    slightly after D₄ before climbing to M\*. That is in the data, though the intro of the paper says only "climbs".
    Check the "hexagonal lattice of hexagonal lattices" gloss for $\mathbb Z[\omega]$-structure.
+   **Added after the first pass:** the paper's Figure 2 contour map (image `phi5_contour.png` from `runs/landscape` of
+   the working repo) and a 3D surface widget `landscape3d` built from the same grid (221 × 181 points, step 0.005,
+   `docs/assets/data/landscape_phi5.json`). The values are numerical, as the paper says; warm colours mark Φ₅ > 6. That
+   grid is not in the public certificate repo's `numerics/`. Nick: add it there?
 8. **bnb.md.** App. C coordinates and leaf types, cut to n = 2. Floating point with margin 1e-9, labelled illustration.
 9. **two-stages.md.** Thm 14 proof, Thms 19–20, Apps C–E. The stage-1 leaf count is 3.25×10⁸ (App. E); the intro of the
    paper rounds it to 3.2×10⁸.

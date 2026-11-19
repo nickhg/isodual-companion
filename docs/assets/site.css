@@ -91,3 +91,10 @@
 
 /* the values table on the home page */
 .md-typeset table.values td, .md-typeset table.values th { padding: 0.3em 1em; }
+
+/* landscape3d labels */
+.w3rel { position: relative; }
+.w3label { position: absolute; transform: translate(10px, -50%); font-size: 0.68rem; white-space: nowrap; pointer-events: none;
+  background: var(--md-default-bg-color); color: var(--w-fg); padding: 0 0.35em; border-radius: 3px; opacity: 0.9; }
+.md-typeset figure.contour img { max-width: 560px; width: 100%; background: #fff; border-radius: 4px; }
+.w3label.left { transform: translate(calc(-100% - 10px), -110%); }
