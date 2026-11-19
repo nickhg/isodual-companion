@@ -61,6 +61,7 @@
 .wsvg .curve { fill: none; stroke: #2166ac; stroke-width: 2.2; }
 .wsvg .curve.thin { stroke-width: 1.4; }
 .wsvg .mark { fill: #b2182b; }
+.wsvg .steplbl { font-size: 14px; fill: var(--w-fg); }
 .wsvg .mlbl { font-size: 13px; fill: var(--w-fg); font-weight: 600; }
 .wsvg .cursor { stroke: var(--w-faint); stroke-width: 0.7; }
 .wsvg .hdot { fill: none; stroke: #b2182b; stroke-width: 2; }

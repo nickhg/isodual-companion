@@ -21,7 +21,7 @@ A computer can't store most real numbers exactly. It rounds them to the nearest 
 
 [Interval arithmetic](https://en.wikipedia.org/wiki/Interval_arithmetic) handles this by computing with intervals instead of numbers. Each quantity is an interval $[\mathrm{lo}, \mathrm{hi}]$ that is guaranteed to contain the true value. Every operation rounds its lower end down and its upper end up, so the guarantee survives every step.
 
-<figure markdown>
+<figure>
 <svg viewBox="0 0 640 120" class="wsvg wide" role="img" aria-label="A true value enclosed by an interval with outward-rounded ends">
   <line x1="20" y1="60" x2="620" y2="60" class="axis"/>
   <g class="tick">

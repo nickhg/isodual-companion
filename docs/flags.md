@@ -125,30 +125,27 @@ $$
 G^*_k = \frac{G_{n-k}}{\Delta}.
 $$
 
-<figure markdown>
+<figure>
 <svg viewBox="0 0 640 210" class="wsvg wide" role="img" aria-label="A flag of L and the reversed dual flag of L-star, with the steps paired">
-  <text x="150" y="22" class="mlbl" text-anchor="middle">flag of L</text>
-  <text x="490" y="22" class="mlbl" text-anchor="middle">reversed dual flag of L*</text>
-  <g class="tick">
-    <rect x="60" y="40" width="180" height="40" rx="6" fill="#d6604d" opacity="0.18"/>
-    <text x="150" y="65" text-anchor="middle">step 1: line through b₁ (G₁)</text>
-    <rect x="60" y="95" width="180" height="40" rx="6" fill="#2166ac" opacity="0.18"/>
-    <text x="150" y="120" text-anchor="middle">step 2: plane of b₁, b₂ (G₂)</text>
-    <rect x="60" y="150" width="180" height="40" rx="6" fill="#1b9e77" opacity="0.18"/>
-    <text x="150" y="175" text-anchor="middle">step 3: all of L (Δ)</text>
-    <rect x="400" y="40" width="180" height="40" rx="6" fill="#2166ac" opacity="0.18"/>
-    <text x="490" y="65" text-anchor="middle">step 1: line through d₃ (G₂/Δ)</text>
-    <rect x="400" y="95" width="180" height="40" rx="6" fill="#d6604d" opacity="0.18"/>
-    <text x="490" y="120" text-anchor="middle">step 2: plane of d₃, d₂ (G₁/Δ)</text>
-    <rect x="400" y="150" width="180" height="40" rx="6" fill="#1b9e77" opacity="0.18"/>
-    <text x="490" y="175" text-anchor="middle">step 3: all of L* (1/Δ)</text>
-  </g>
-  <line x1="245" y1="115" x2="395" y2="60" class="dash"/>
-  <line x1="245" y1="60" x2="395" y2="115" class="dash"/>
-  <text x="320" y="150" class="tick" text-anchor="middle">each step pairs with the one</text>
-  <text x="320" y="165" class="tick" text-anchor="middle">perpendicular to it</text>
+  <text x="140" y="24" class="mlbl" text-anchor="middle">flag of L</text>
+  <text x="500" y="24" class="mlbl" text-anchor="middle">reversed dual flag of L*</text>
+  <rect x="20" y="40" width="240" height="42" rx="6" fill="#d6604d" opacity="0.18"/>
+  <text x="140" y="66" class="steplbl" text-anchor="middle">step 1: line through b₁ (G₁)</text>
+  <rect x="380" y="40" width="240" height="42" rx="6" fill="#2166ac" opacity="0.18"/>
+  <text x="500" y="66" class="steplbl" text-anchor="middle">step 1: line through d₃ (G₂/Δ)</text>
+  <rect x="20" y="95" width="240" height="42" rx="6" fill="#2166ac" opacity="0.18"/>
+  <text x="140" y="121" class="steplbl" text-anchor="middle">step 2: plane of b₁, b₂ (G₂)</text>
+  <rect x="380" y="95" width="240" height="42" rx="6" fill="#d6604d" opacity="0.18"/>
+  <text x="500" y="121" class="steplbl" text-anchor="middle">step 2: plane of d₃, d₂ (G₁/Δ)</text>
+  <rect x="20" y="150" width="240" height="42" rx="6" fill="#1b9e77" opacity="0.18"/>
+  <text x="140" y="176" class="steplbl" text-anchor="middle">step 3: all of L (Δ)</text>
+  <rect x="380" y="150" width="240" height="42" rx="6" fill="#1b9e77" opacity="0.18"/>
+  <text x="500" y="176" class="steplbl" text-anchor="middle">step 3: all of L* (1/Δ)</text>
+  <line x1="264" y1="116" x2="376" y2="61" class="dash"/>
+  <line x1="264" y1="61" x2="376" y2="116" class="dash"/>
+  <line x1="264" y1="171" x2="376" y2="171" class="dash"/>
 </svg>
-<figcaption>In three dimensions: the line of the dual flag is perpendicular to the plane of the original, and the dual plane is perpendicular to the original line. Matching colours mark paired steps.</figcaption>
+<figcaption>In three dimensions: the line of the dual flag is perpendicular to the plane of the original, and the dual plane is perpendicular to the original line. Matching colours and the dashed lines mark the paired steps.</figcaption>
 </figure>
 
 Multiply over all the steps and the potential of the reversed dual basis is the potential of the original, divided by a power of $\Delta$. That is why $\eta(L) = \eta(L^*)$.
