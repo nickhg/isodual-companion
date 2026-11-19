@@ -19,8 +19,8 @@ version, commit 0b3340c of the paper repo) or from the certificate repository (r
   standing in for Theorem 13, and the chapter says so.
 - **Tooltips.** Python-Markdown's abbreviation matcher can't end a term on `*`, so D₅\*, E₆\*, M\* etc. have no tooltips of
   their own. The D₅, A₃, E₆ and E₇ tooltips describe the dual too. M\* is in the glossary only.
-- **Brian Moulton.** Chapter 11 states the exact D₄/D₅ first-order rates without naming him (per the "acknowledgement
-  only" decision for the paper). Nick: should the site credit him by name?
+- **Brian Moulton** is not credited on the site (Nick, 18 Nov). Chapter 11 states the exact D₄/D₅ first-order rates
+  without names.
 
 ## Chapter by chapter: sources, and what Nick should check
 1. **index.md (The question).** §1, Definition 1, Theorems A/7/8/14, Proposition 6. Check the history sentences: LLL's
@@ -58,11 +58,13 @@ version, commit 0b3340c of the paper repo) or from the certificate repository (r
   `includes/abbreviations.md`.
 - Chapter lengths are 1,000–2,000 words, below the 1,500–3,000 in the spec, by design (the spec also said don't over-polish).
 - The lattice2d and lattice3d widgets start from deliberately poor bases. They may need gentler starting points.
+- On a phone the geodesic chart's axis labels are small (the SVG scales down with the screen).
 
 ## Testing done
 - `mkdocs build --strict` passes. Every external link resolved (curl) at build time; one Wikipedia target
   (Korkine–Zolotarev lattice basis reduction) does not exist and was dropped.
 - Headless Chromium (Playwright), desktop 1280×900 and phone 390×844 with touch: every page loads with no JS errors, all
   maths renders, every widget mounts. Tested: Find best, view the dual, project/lift animation, bnb in both modes.
+- Live site (after deploy): phone-sized screenshots of chapters 1, 3 and 7 look right, with no errors.
 - Not tested: real Safari and Firefox, real phones. The WebGL fallback images exist (`docs/assets/img/`) but the
   fallback path was not exercised.
