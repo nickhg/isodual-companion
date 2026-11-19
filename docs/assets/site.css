@@ -1,5 +1,7 @@
 /* Site styles: reading width, "In the paper" notes, and the widgets. */
-:root { --w-fg: var(--md-default-fg-color); --w-faint: var(--md-default-fg-color--light);
+/* Declared on the element that carries the palette, not :root: a var() resolves where it is declared, so on :root
+   these took the light palette's values even in dark mode. */
+:root, [data-md-color-scheme] { --w-fg: var(--md-default-fg-color); --w-faint: var(--md-default-fg-color--light);
   --w-line: var(--md-default-fg-color--lighter); --w-bg: var(--md-code-bg-color);
   --leaf-D: #9e9e9e; --leaf-A: #4daf4a; --leaf-B: #377eb8; --leaf-C: #ff7f00; }
 
@@ -14,7 +16,11 @@
 }
 
 /* widget frame */
-.widget { margin: 1.4em 0; padding: 0.8em; border: 1px solid var(--w-line); border-radius: 6px; background: var(--w-bg); }
+.widget { margin: 1.4em 0; padding: 0.8em; border: 1px solid var(--w-line); border-radius: 6px; background: var(--w-bg);
+  color: var(--w-fg); color-scheme: light; }
+[data-md-color-scheme="slate"] .widget { color-scheme: dark; }
+.widget input[type=range] { accent-color: var(--md-accent-fg-color); }
+.wbar select:focus-visible, .wbtn:focus-visible { outline: 2px solid var(--md-accent-fg-color); outline-offset: 1px; }
 .widget-error, .widget-fallback figcaption { font-size: 0.75rem; color: var(--w-faint); }
 .widget-fallback img { max-width: 100%; }
 .wbar { display: flex; flex-wrap: wrap; gap: 0.4em; align-items: center; margin-bottom: 0.5em; font-size: 0.75rem; }
@@ -97,7 +103,8 @@
 .w3rel { position: relative; }
 .w3label { position: absolute; transform: translate(10px, -50%); font-size: 0.68rem; white-space: nowrap; pointer-events: none;
   background: var(--md-default-bg-color); color: var(--w-fg); padding: 0 0.35em; border-radius: 3px; opacity: 0.9; }
-.md-typeset figure.contour img { max-width: 560px; width: 100%; background: #fff; border-radius: 4px; }
+.md-typeset figure.contour img { max-width: 560px; width: 100%; background: #fff; border-radius: 4px; padding: 6px;
+  box-sizing: border-box; border: 1px solid var(--w-line); }
 .w3label.left { transform: translate(calc(-100% - 10px), -110%); }
 
 /* psikz widget and small matrices in readouts */
@@ -107,3 +114,21 @@
 .md-typeset .wreadout table.wmatrix { border-left: 2px solid var(--w-fg); border-right: 2px solid var(--w-fg); border-radius: 4px; }
 .md-typeset .wreadout table.wmatrix td { text-align: right; padding: 0.1em 0.6em; border: none; }
 .md-typeset .wreadout tr.ok td { color: var(--leaf-A); font-weight: 600; }
+
+/* Dark palette: lighten the drawing colours that are too dark on a dark panel. The widgets set them as SVG
+   presentation attributes or inline styles, which these rules override. */
+[data-md-color-scheme="slate"] .wsvg [stroke="#2166ac"] { stroke: #74add1; }
+[data-md-color-scheme="slate"] .wsvg [fill="#2166ac"] { fill: #74add1; }
+[data-md-color-scheme="slate"] .wsvg [stroke="#d6604d"] { stroke: #f08a76; }
+[data-md-color-scheme="slate"] .wsvg [fill="#d6604d"] { fill: #f08a76; }
+[data-md-color-scheme="slate"] .wsvg [stroke="#1b9e77"] { stroke: #4fd1a5; }
+[data-md-color-scheme="slate"] .wsvg [fill="#1b9e77"] { fill: #4fd1a5; }
+[data-md-color-scheme="slate"] .wsvg .curve { stroke: #74add1; }
+[data-md-color-scheme="slate"] .wsvg .mark { fill: #f07b78; }
+[data-md-color-scheme="slate"] .wsvg .hdot, [data-md-color-scheme="slate"] .wsvg .curves .curve,
+[data-md-color-scheme="slate"] .wsvg .curves .dash { stroke: #f07b78; }
+[data-md-color-scheme="slate"] .wsvg .sbarrect, [data-md-color-scheme="slate"] .wstair .sbarrect { fill: #6f9fdc; }
+[data-md-color-scheme="slate"] .sfill[style*="#2166ac"] { background: #74add1 !important; }
+[data-md-color-scheme="slate"] .sfill[style*="#d6604d"] { background: #f08a76 !important; }
+[data-md-color-scheme="slate"] .sfill[style*="#1b9e77"] { background: #4fd1a5 !important; }
+[data-md-color-scheme="slate"] .wsvg .lbl[fill="#2166ac"] { fill: #74add1; }
