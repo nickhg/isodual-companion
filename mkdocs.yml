@@ -1,0 +1,79 @@
+site_name: The isodual constant
+site_description: A picture-led companion to "The isodual constant of the LLL potential" (Howgrave-Graham, 2026)
+site_author: Nick Howgrave-Graham
+site_url: https://nickhg.github.io/isodual-companion/
+repo_url: https://github.com/nickhg/isodual-companion
+repo_name: nickhg/isodual-companion
+copyright: Text CC BY 4.0, code MIT. &middot; <a href="https://eprint.iacr.org/2026/2846">The paper (ePrint 2026/2846)</a> &middot; <a href="https://github.com/nickhg/isodual_constant">Certificates and code</a> &middot; <a href="https://doi.org/10.5281/zenodo.23650216">Zenodo</a> &middot; <a href="https://doi.org/10.57967/hf/11260">Data (HF)</a>
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.footer
+    - navigation.instant
+    - navigation.top
+    - search.suggest
+    - content.footnote.tooltips
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - md_in_html
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+
+extra_css:
+  - assets/vendor/katex/katex.min.css
+  - assets/site.css
+
+extra_javascript:
+  - assets/vendor/katex/katex.min.js
+  - assets/katex-init.js
+  - path: assets/widgets/loader.js
+    type: module
+
+nav:
+  - The question: index.md
+  - Foundations:
+      - Lattices, bases and duals: lattices.md
+      - Flags and the potential: flags.md
+      - Small dimensions: small.md
+  - Dimension five:
+      - Why a flag has two ends: two-ends.md
+      - Project and lift: project-lift.md
+      - "The surprise: M*": mstar.md
+  - The proof:
+      - Branch and bound you can watch: bnb.md
+      - Two stages: two-stages.md
+      - Why trust the computer: trust.md
+  - Beyond:
+      - E6, E7, E8: e-lattices.md
+      - Growth and what's next: growth.md
+      - Glossary: glossary.md
+      - Map to the paper: paper-map.md
