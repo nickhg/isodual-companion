@@ -16,7 +16,7 @@ In two dimensions the answer is the [hexagonal lattice](https://en.wikipedia.org
 
 The 2007 question is the same kind of question, but about the whole basis rather than its first vector. A basis gives you a nested chain of subspaces: the line through $b_1$, the plane through $b_1$ and $b_2$, the 3-space through the first three, and so on. That chain is called a *flag*. Hermite asks how big the first step of the best flag can be forced to be. The LLL potential multiplies all the steps together.
 
-Why care about all the steps? Because reduction algorithms do. LLL, and the deeper algorithms built on it (PotLLL, DeepBKZ and their relatives), don't only want a short first vector. They want every step of the basis to be reasonably small, not just the first.
+Why care about all the steps? Because reduction algorithms do. LLL, and the deeper algorithms built on it ([PotLLL](https://doi.org/10.1007/s10623-014-9918-8), [DeepBKZ](https://doi.org/10.1007/978-3-319-76620-1_9), and relatives such as [self-dual DeepBKZ](https://doi.org/10.1515/jmc-2015-0053) and [PotBKZ](https://doi.org/10.1007/s13160-026-00799-6)), don't only want a short first vector. They want every step of the basis to be reasonably small, not just the first.
 
 ## The number we are after
 
