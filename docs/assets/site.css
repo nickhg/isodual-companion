@@ -132,3 +132,6 @@
 [data-md-color-scheme="slate"] .sfill[style*="#d6604d"] { background: #f08a76 !important; }
 [data-md-color-scheme="slate"] .sfill[style*="#1b9e77"] { background: #4fd1a5 !important; }
 [data-md-color-scheme="slate"] .wsvg .lbl[fill="#2166ac"] { fill: #74add1; }
+
+/* glossary bases: wide matrices (E7, E8) scroll sideways instead of breaking the phone layout */
+.md-typeset details .arithmatex { overflow-x: auto; overflow-y: hidden; max-width: 100%; }

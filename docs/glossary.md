@@ -60,19 +60,256 @@ Short, plain definitions, with a link for more. Lengths are squared throughout, 
 
 ## Named lattices
 
+Each entry below has a basis you can open, written in triangular form for a Ψ-minimal basis: the squared diagonal entries are the staircase, so $\eta$ can be recomputed from the diagonal alone. The matrices are generated and checked exactly by `scripts/glossary_bases.py` in the site's repository.
+
+**ℤⁿ.** All integer points. The standard basis is already triangular, $B = I$, with staircase $1, \dots, 1$ and $\eta = 1$: the reference point every other lattice is measured against.
+
 **A_n.** Integer points in $\mathbb Z^{n+1}$ with coordinate sum 0. A₂ is the [hexagonal lattice](https://en.wikipedia.org/wiki/Hexagonal_lattice), the pattern of a honeycomb. A₃ is fcc, [how greengrocers stack oranges](https://en.wikipedia.org/wiki/Close-packing_of_equal_spheres). [More](https://en.wikipedia.org/wiki/Root_system#Root_lattice).
+
+<!-- basis:A_n -->
+
+??? info "Show a basis of A₂"
+
+    Gram matrix $G$: the Cartan matrix of $A_2$, simple roots $\alpha_1, \alpha_2$.
+
+    $$G = \begin{pmatrix}2&-1\\-1&2\end{pmatrix}$$
+
+    In triangular form, rows $b_1, \dots, b_2$, with $BB^{\mathsf T} = G$ and $B_{ij} = \mu_{ij}|b_j^*|$:
+
+    $$B = \begin{pmatrix}\sqrt{2}&0\\-\tfrac{\sqrt{2}}{2}&\tfrac{\sqrt{6}}{2}\end{pmatrix}$$
+
+    Squared diagonal (the staircase): $2$, $\tfrac{3}{2}$. Volumes $G_k$: $2$, $3$. So $\Psi^2 = G_1\cdots G_2 = 6$, $\Delta = 3$, and $\eta = \Psi^2/\Delta^{3/2} = 6/3^{3/2} = \tfrac{2}{\sqrt3}$.
+
+    In the paper: Table 2 (Theorem 5).
+    { .paper-ref }
+
+??? info "Show a basis of A₃ (fcc)"
+
+    Gram matrix $G$: the Cartan matrix of $A_3$, simple roots in order along the chain.
+
+    $$G = \begin{pmatrix}2&-1&0\\-1&2&-1\\0&-1&2\end{pmatrix}$$
+
+    In triangular form, rows $b_1, \dots, b_3$, with $BB^{\mathsf T} = G$ and $B_{ij} = \mu_{ij}|b_j^*|$:
+
+    $$B = \begin{pmatrix}\sqrt{2}&0&0\\-\tfrac{\sqrt{2}}{2}&\tfrac{\sqrt{6}}{2}&0\\0&-\tfrac{\sqrt{6}}{3}&\tfrac{2\sqrt{3}}{3}\end{pmatrix}$$
+
+    Squared diagonal (the staircase): $2$, $\tfrac{3}{2}$, $\tfrac{4}{3}$. Volumes $G_k$: $2$, $3$, $4$. So $\Psi^2 = G_1\cdots G_3 = 24$, $\Delta = 4$, and $\eta = \Psi^2/\Delta^{2} = 24/4^{2} = \tfrac32$.
+
+    In the paper: Table 2 (Theorem 5).
+    { .paper-ref }
+
+??? info "Show a basis of A₄"
+
+    Gram matrix $G$: the Cartan matrix of $A_4$, simple roots in order along the chain.
+
+    $$G = \begin{pmatrix}2&-1&0&0\\-1&2&-1&0\\0&-1&2&-1\\0&0&-1&2\end{pmatrix}$$
+
+    In triangular form, rows $b_1, \dots, b_4$, with $BB^{\mathsf T} = G$ and $B_{ij} = \mu_{ij}|b_j^*|$:
+
+    $$B = \begin{pmatrix}\sqrt{2}&0&0&0\\-\tfrac{\sqrt{2}}{2}&\tfrac{\sqrt{6}}{2}&0&0\\0&-\tfrac{\sqrt{6}}{3}&\tfrac{2\sqrt{3}}{3}&0\\0&0&-\tfrac{\sqrt{3}}{2}&\tfrac{\sqrt{5}}{2}\end{pmatrix}$$
+
+    Squared diagonal (the staircase): $2$, $\tfrac{3}{2}$, $\tfrac{4}{3}$, $\tfrac{5}{4}$. Volumes $G_k$: $2$, $3$, $4$, $5$. So $\Psi^2 = G_1\cdots G_4 = 120$, $\Delta = 5$, and $\eta = \Psi^2/\Delta^{5/2} = 120/5^{5/2} = \tfrac{24}{5\sqrt5}$.
+
+    In the paper: Table 2 (Theorem 5).
+    { .paper-ref }
+
+<!-- /basis:A_n -->
 
 **A₃\* (bcc).** The body-centred cubic lattice, the dual of fcc. [More](https://en.wikipedia.org/wiki/Cubic_crystal_system).
 
+<!-- basis:A3* -->
+
+??? info "Show a basis of A₃\* (bcc)"
+
+    Gram matrix $G$: twice the Gram matrix of the reversed dual of the $A_3$ basis above, $2\,JG^{-1}J$ (so bcc scaled by $\sqrt2$).
+
+    $$G = \begin{pmatrix}\tfrac{3}{2}&1&\tfrac{1}{2}\\1&2&1\\\tfrac{1}{2}&1&\tfrac{3}{2}\end{pmatrix}$$
+
+    In triangular form, rows $b_1, \dots, b_3$, with $BB^{\mathsf T} = G$ and $B_{ij} = \mu_{ij}|b_j^*|$:
+
+    $$B = \begin{pmatrix}\tfrac{\sqrt{6}}{2}&0&0\\\tfrac{\sqrt{6}}{3}&\tfrac{2\sqrt{3}}{3}&0\\\tfrac{\sqrt{6}}{6}&\tfrac{\sqrt{3}}{3}&1\end{pmatrix}$$
+
+    Squared diagonal (the staircase): $\tfrac{3}{2}$, $\tfrac{4}{3}$, $1$. Volumes $G_k$: $\tfrac{3}{2}$, $2$, $2$. So $\Psi^2 = G_1\cdots G_3 = 6$, $\Delta = 2$, and $\eta = \Psi^2/\Delta^{2} = 6/2^{2} = \tfrac32$.
+
+    In the paper: §2, Isoduality: the reversed dual of a Ψ-minimal basis is Ψ-minimal.
+    { .paper-ref }
+
+<!-- /basis:A3* -->
+
 **D_n.** Integer points in $\mathbb Z^n$ with an even coordinate sum: the checkerboard. D₄ is the densest lattice in four dimensions ([more](https://en.wikipedia.org/wiki/D4_lattice)), and D₅ in five ([more](https://en.wikipedia.org/wiki/D5_lattice)).
+
+<!-- basis:D_n -->
+
+??? info "Show a basis of D₄"
+
+    Gram matrix $G$: the Cartan matrix of $D_4$, simple roots $\alpha_1, \alpha_2, \alpha_3, \alpha_4$ (the centre second).
+
+    $$G = \begin{pmatrix}2&-1&0&0\\-1&2&-1&-1\\0&-1&2&0\\0&-1&0&2\end{pmatrix}$$
+
+    In triangular form, rows $b_1, \dots, b_4$, with $BB^{\mathsf T} = G$ and $B_{ij} = \mu_{ij}|b_j^*|$:
+
+    $$B = \begin{pmatrix}\sqrt{2}&0&0&0\\-\tfrac{\sqrt{2}}{2}&\tfrac{\sqrt{6}}{2}&0&0\\0&-\tfrac{\sqrt{6}}{3}&\tfrac{2\sqrt{3}}{3}&0\\0&-\tfrac{\sqrt{6}}{3}&-\tfrac{\sqrt{3}}{3}&1\end{pmatrix}$$
+
+    Squared diagonal (the staircase): $2$, $\tfrac{3}{2}$, $\tfrac{4}{3}$, $1$. Volumes $G_k$: $2$, $3$, $4$, $4$. So $\Psi^2 = G_1\cdots G_4 = 96$, $\Delta = 4$, and $\eta = \Psi^2/\Delta^{5/2} = 96/4^{5/2} = 3$.
+
+    In the paper: Table 2 (Theorem 5).
+    { .paper-ref }
+
+??? info "Show a basis of D₅"
+
+    Gram matrix $G$: the Cartan matrix of $D_5$, simple roots $\alpha_2, \alpha_3, \alpha_4, \alpha_5, \alpha_1$.
+
+    $$G = \begin{pmatrix}2&-1&0&0&-1\\-1&2&-1&-1&0\\0&-1&2&0&0\\0&-1&0&2&0\\-1&0&0&0&2\end{pmatrix}$$
+
+    In triangular form, rows $b_1, \dots, b_5$, with $BB^{\mathsf T} = G$ and $B_{ij} = \mu_{ij}|b_j^*|$:
+
+    $$B = \begin{pmatrix}\sqrt{2}&0&0&0&0\\-\tfrac{\sqrt{2}}{2}&\tfrac{\sqrt{6}}{2}&0&0&0\\0&-\tfrac{\sqrt{6}}{3}&\tfrac{2\sqrt{3}}{3}&0&0\\0&-\tfrac{\sqrt{6}}{3}&-\tfrac{\sqrt{3}}{3}&1&0\\-\tfrac{\sqrt{2}}{2}&-\tfrac{\sqrt{6}}{6}&-\tfrac{\sqrt{3}}{6}&-\tfrac{1}{2}&1\end{pmatrix}$$
+
+    Squared diagonal (the staircase): $2$, $\tfrac{3}{2}$, $\tfrac{4}{3}$, $1$, $1$. Volumes $G_k$: $2$, $3$, $4$, $4$, $4$. So $\Psi^2 = G_1\cdots G_5 = 384$, $\Delta = 4$, and $\eta = \Psi^2/\Delta^{3} = 384/4^{3} = 6$.
+
+    In the paper: Table 2 (Theorem 5).
+    { .paper-ref }
+
+<!-- /basis:D_n -->
 
 **D₅\*.** The dual of D₅: $\mathbb Z^5$ together with $\mathbb Z^5 + (\tfrac12,\dots,\tfrac12)$. With D₅, the only lattice with $\eta = 6$.
 
+<!-- basis:D5* -->
+
+??? info "Show a basis of D₅\*"
+
+    Gram matrix $G$: twice the Gram matrix of the reversed dual of the D₅ basis above, $2\,JG^{-1}J$ (so D₅\* scaled by $\sqrt2$).
+
+    $$G = \begin{pmatrix}2&1&1&2&2\\1&\tfrac{5}{2}&\tfrac{3}{2}&3&2\\1&\tfrac{3}{2}&\tfrac{5}{2}&3&2\\2&3&3&6&4\\2&2&2&4&4\end{pmatrix}$$
+
+    In triangular form, rows $b_1, \dots, b_5$, with $BB^{\mathsf T} = G$ and $B_{ij} = \mu_{ij}|b_j^*|$:
+
+    $$B = \begin{pmatrix}\sqrt{2}&0&0&0&0\\\tfrac{\sqrt{2}}{2}&\sqrt{2}&0&0&0\\\tfrac{\sqrt{2}}{2}&\tfrac{\sqrt{2}}{2}&\tfrac{\sqrt{6}}{2}&0&0\\\sqrt{2}&\sqrt{2}&\tfrac{\sqrt{6}}{3}&\tfrac{2\sqrt{3}}{3}&0\\\sqrt{2}&\tfrac{\sqrt{2}}{2}&\tfrac{\sqrt{6}}{6}&\tfrac{\sqrt{3}}{3}&1\end{pmatrix}$$
+
+    Squared diagonal (the staircase): $2$, $2$, $\tfrac{3}{2}$, $\tfrac{4}{3}$, $1$. Volumes $G_k$: $2$, $4$, $6$, $8$, $8$. So $\Psi^2 = G_1\cdots G_5 = 3072$, $\Delta = 8$, and $\eta = \Psi^2/\Delta^{3} = 3072/8^{3} = 6$.
+
+    In the paper: §2, Isoduality: the reversed dual of a Ψ-minimal basis is Ψ-minimal.
+    { .paper-ref }
+
+<!-- /basis:D5* -->
+
 **E₆, E₇, E₈.** The exceptional root lattices, with 72, 126 and 240 roots, the densest lattices in dimensions 6, 7 and 8. E₈ is the densest sphere packing in eight dimensions. More: [E₆](https://en.wikipedia.org/wiki/E6_lattice), [E₇](https://en.wikipedia.org/wiki/E7_lattice), [E₈](https://en.wikipedia.org/wiki/E8_lattice).
+
+<!-- basis:E_n -->
+
+??? info "Show a basis of E₆"
+
+    Gram matrix $G$: the Cartan matrix of $E_6$, simple roots $\alpha_2, \alpha_4, \alpha_3, \alpha_5, \alpha_1, \alpha_6$.
+
+    $$G = \begin{pmatrix}2&-1&0&0&0&0\\-1&2&-1&-1&0&0\\0&-1&2&0&-1&0\\0&-1&0&2&0&-1\\0&0&-1&0&2&0\\0&0&0&-1&0&2\end{pmatrix}$$
+
+    In triangular form, rows $b_1, \dots, b_6$, with $BB^{\mathsf T} = G$ and $B_{ij} = \mu_{ij}|b_j^*|$:
+
+    $$B = \begin{pmatrix}\sqrt{2}&0&0&0&0&0\\-\tfrac{\sqrt{2}}{2}&\tfrac{\sqrt{6}}{2}&0&0&0&0\\0&-\tfrac{\sqrt{6}}{3}&\tfrac{2\sqrt{3}}{3}&0&0&0\\0&-\tfrac{\sqrt{6}}{3}&-\tfrac{\sqrt{3}}{3}&1&0&0\\0&0&-\tfrac{\sqrt{3}}{2}&-\tfrac{1}{2}&1&0\\0&0&0&-1&-\tfrac{1}{2}&\tfrac{\sqrt{3}}{2}\end{pmatrix}$$
+
+    Squared diagonal (the staircase): $2$, $\tfrac{3}{2}$, $\tfrac{4}{3}$, $1$, $1$, $\tfrac{3}{4}$. Volumes $G_k$: $2$, $3$, $4$, $4$, $4$, $3$. So $\Psi^2 = G_1\cdots G_6 = 1152$, $\Delta = 3$, and $\eta = \Psi^2/\Delta^{7/2} = 1152/3^{7/2} = \tfrac{128\sqrt3}{9}$.
+
+    In the paper: Table 2 (Theorem 5).
+    { .paper-ref }
+
+??? info "Show a basis of E₇"
+
+    Gram matrix $G$: the Cartan matrix of $E_7$, simple roots $\alpha_2, \alpha_4, \alpha_3, \alpha_5, \alpha_1, \alpha_6, \alpha_7$.
+
+    $$G = \begin{pmatrix}2&-1&0&0&0&0&0\\-1&2&-1&-1&0&0&0\\0&-1&2&0&-1&0&0\\0&-1&0&2&0&-1&0\\0&0&-1&0&2&0&0\\0&0&0&-1&0&2&-1\\0&0&0&0&0&-1&2\end{pmatrix}$$
+
+    In triangular form, rows $b_1, \dots, b_7$, with $BB^{\mathsf T} = G$ and $B_{ij} = \mu_{ij}|b_j^*|$:
+
+    $$B = \begin{pmatrix}\sqrt{2}&0&0&0&0&0&0\\-\tfrac{\sqrt{2}}{2}&\tfrac{\sqrt{6}}{2}&0&0&0&0&0\\0&-\tfrac{\sqrt{6}}{3}&\tfrac{2\sqrt{3}}{3}&0&0&0&0\\0&-\tfrac{\sqrt{6}}{3}&-\tfrac{\sqrt{3}}{3}&1&0&0&0\\0&0&-\tfrac{\sqrt{3}}{2}&-\tfrac{1}{2}&1&0&0\\0&0&0&-1&-\tfrac{1}{2}&\tfrac{\sqrt{3}}{2}&0\\0&0&0&0&0&-\tfrac{2\sqrt{3}}{3}&\tfrac{\sqrt{6}}{3}\end{pmatrix}$$
+
+    Squared diagonal (the staircase): $2$, $\tfrac{3}{2}$, $\tfrac{4}{3}$, $1$, $1$, $\tfrac{3}{4}$, $\tfrac{2}{3}$. Volumes $G_k$: $2$, $3$, $4$, $4$, $4$, $3$, $2$. So $\Psi^2 = G_1\cdots G_7 = 2304$, $\Delta = 2$, and $\eta = \Psi^2/\Delta^{4} = 2304/2^{4} = 144$.
+
+    In the paper: Table 2 (Theorem 5).
+    { .paper-ref }
+
+??? info "Show a basis of E₈"
+
+    Gram matrix $G$: the Cartan matrix of $E_8$, simple roots $\alpha_2, \alpha_4, \alpha_3, \alpha_5, \alpha_1, \alpha_6, \alpha_7, \alpha_8$.
+
+    $$G = \begin{pmatrix}2&-1&0&0&0&0&0&0\\-1&2&-1&-1&0&0&0&0\\0&-1&2&0&-1&0&0&0\\0&-1&0&2&0&-1&0&0\\0&0&-1&0&2&0&0&0\\0&0&0&-1&0&2&-1&0\\0&0&0&0&0&-1&2&-1\\0&0&0&0&0&0&-1&2\end{pmatrix}$$
+
+    In triangular form, rows $b_1, \dots, b_8$, with $BB^{\mathsf T} = G$ and $B_{ij} = \mu_{ij}|b_j^*|$:
+
+    $$B = \begin{pmatrix}\sqrt{2}&0&0&0&0&0&0&0\\-\tfrac{\sqrt{2}}{2}&\tfrac{\sqrt{6}}{2}&0&0&0&0&0&0\\0&-\tfrac{\sqrt{6}}{3}&\tfrac{2\sqrt{3}}{3}&0&0&0&0&0\\0&-\tfrac{\sqrt{6}}{3}&-\tfrac{\sqrt{3}}{3}&1&0&0&0&0\\0&0&-\tfrac{\sqrt{3}}{2}&-\tfrac{1}{2}&1&0&0&0\\0&0&0&-1&-\tfrac{1}{2}&\tfrac{\sqrt{3}}{2}&0&0\\0&0&0&0&0&-\tfrac{2\sqrt{3}}{3}&\tfrac{\sqrt{6}}{3}&0\\0&0&0&0&0&0&-\tfrac{\sqrt{6}}{2}&\tfrac{\sqrt{2}}{2}\end{pmatrix}$$
+
+    Squared diagonal (the staircase): $2$, $\tfrac{3}{2}$, $\tfrac{4}{3}$, $1$, $1$, $\tfrac{3}{4}$, $\tfrac{2}{3}$, $\tfrac{1}{2}$. Volumes $G_k$: $2$, $3$, $4$, $4$, $4$, $3$, $2$, $1$. So $\Psi^2 = G_1\cdots G_8 = 2304$, $\Delta = 1$, and $\eta = \Psi^2/\Delta^{9/2} = 2304/1^{9/2} = 2304$.
+
+    In the paper: Table 2 (Theorem 5).
+    { .paper-ref }
+
+<!-- /basis:E_n -->
 
 **$A_2\otimes A_2$.** A four-dimensional lattice built from two copies of the hexagonal lattice. It is isodual, and the far end of the geodesic in chapter 7.
 
+<!-- basis:A2xA2 -->
+
+??? info "Show a basis of A₂⊗A₂"
+
+    Gram matrix $G$: $H_A$ of the paper (determinant 81) in a Ψ-minimal basis, rows $-e_4$, $-e_2-e_3$, $-e_3$, $-e_1-e_2-e_4$ in its coordinates.
+
+    $$G = \begin{pmatrix}4&-2&-1&1\\-2&4&-1&-2\\-1&-1&4&-1\\1&-2&-1&4\end{pmatrix}$$
+
+    In triangular form, rows $b_1, \dots, b_4$, with $BB^{\mathsf T} = G$ and $B_{ij} = \mu_{ij}|b_j^*|$:
+
+    $$B = \begin{pmatrix}2&0&0&0\\-1&\sqrt{3}&0&0\\-\tfrac{1}{2}&-\tfrac{\sqrt{3}}{2}&\sqrt{3}&0\\\tfrac{1}{2}&-\tfrac{\sqrt{3}}{2}&-\tfrac{\sqrt{3}}{2}&\tfrac{3}{2}\end{pmatrix}$$
+
+    Squared diagonal (the staircase): $4$, $3$, $3$, $\tfrac{9}{4}$. Volumes $G_k$: $4$, $12$, $36$, $81$. So $\Psi^2 = G_1\cdots G_4 = 139968$, $\Delta = 81$, and $\eta = \Psi^2/\Delta^{5/2} = 139968/81^{5/2} = \tfrac{64}{27}$.
+
+    (Size-reduced from the matrix described: the same flag, so the same staircase and Ψ.)
+
+    In the paper: Remark 24.
+    { .paper-ref }
+
+<!-- /basis:A2xA2 -->
+
 **M\*.** The four-dimensional lattice where $\Phi_5$ is largest, at $2^{16}/(3^4\cdot5^3)\approx6.4727$. It is even and 135-modular, the unique densest lattice in its genus, Hermitian over the Eisenstein integers, and symplectic.
+
+<!-- basis:Mstar -->
+
+??? info "Show a basis of M\*"
+
+    Gram matrix $G$: $P_0$ in the basis of the paper's Ψ-minimal flag $(-1,-1,0,-1)$, $(-1,-1,1,-1)$, $(-1,0,-1,-1)$, completed by $-e_4$.
+
+    $$G = \begin{pmatrix}16&-8&-8&7\\-8&16&7&1\\-8&7&16&-8\\7&1&-8&16\end{pmatrix}$$
+
+    In triangular form, rows $b_1, \dots, b_4$, with $BB^{\mathsf T} = G$ and $B_{ij} = \mu_{ij}|b_j^*|$:
+
+    $$B = \begin{pmatrix}4&0&0&0\\-2&2\sqrt{3}&0&0\\-2&\tfrac{\sqrt{3}}{2}&\tfrac{3\sqrt{5}}{2}&0\\\tfrac{7}{4}&\tfrac{3\sqrt{3}}{4}&-\tfrac{3\sqrt{5}}{4}&\tfrac{3\sqrt{15}}{4}\end{pmatrix}$$
+
+    Squared diagonal (the staircase): $16$, $12$, $\tfrac{45}{4}$, $\tfrac{135}{16}$. Volumes $G_k$: $16$, $192$, $2160$, $18225$. So $\Psi^2 = G_1\cdots G_4 = 120932352000$, $\Delta = 18225$, and $\eta = \Psi^2/\Delta^{5/2} = 120932352000/18225^{5/2} = \tfrac{2^{14}}{3^5\cdot5^2}$.
+
+    (Size-reduced from the matrix described: the same flag, so the same staircase and Ψ.)
+
+    In the paper: Definition 16, Proposition 17 (2).
+    { .paper-ref }
+
+<!-- /basis:Mstar -->
+
+**π_vD₅.** The shadow of D₅: D₅ projected along one of its roots. It is D₄ with one coordinate axis scaled by $1/\sqrt2$, and the third peak of $\Phi_5$, at exactly 6.
+
+<!-- basis:pivd5 -->
+
+??? info "Show a basis of π_vD₅"
+
+    Gram matrix $G$: the paper's Gram matrix of $\pi_vD_5$ (determinant 2) in a Ψ-minimal basis, rows $-e_2$, $-e_2-e_3$, $-e_1-e_2$, $-e_2-e_3-e_4$ in its coordinates.
+
+    $$G = \begin{pmatrix}\tfrac{3}{2}&\tfrac{1}{2}&\tfrac{1}{2}&\tfrac{1}{2}\\\tfrac{1}{2}&\tfrac{3}{2}&-\tfrac{1}{2}&\tfrac{1}{2}\\\tfrac{1}{2}&-\tfrac{1}{2}&\tfrac{3}{2}&-\tfrac{1}{2}\\\tfrac{1}{2}&\tfrac{1}{2}&-\tfrac{1}{2}&\tfrac{3}{2}\end{pmatrix}$$
+
+    In triangular form, rows $b_1, \dots, b_4$, with $BB^{\mathsf T} = G$ and $B_{ij} = \mu_{ij}|b_j^*|$:
+
+    $$B = \begin{pmatrix}\tfrac{\sqrt{6}}{2}&0&0&0\\\tfrac{\sqrt{6}}{6}&\tfrac{2\sqrt{3}}{3}&0&0\\\tfrac{\sqrt{6}}{6}&-\tfrac{\sqrt{3}}{3}&1&0\\\tfrac{\sqrt{6}}{6}&\tfrac{\sqrt{3}}{6}&-\tfrac{1}{2}&1\end{pmatrix}$$
+
+    Squared diagonal (the staircase): $\tfrac{3}{2}$, $\tfrac{4}{3}$, $1$, $1$. Volumes $G_k$: $\tfrac{3}{2}$, $2$, $2$, $2$. So $\Psi^2 = G_1\cdots G_4 = 12$, $\Delta = 2$, and $\eta = \Psi^2/\Delta^{5/2} = 12/2^{5/2} = \tfrac{3}{\sqrt2}$.
+
+    In the paper: Proposition 21 and the text before it; $\eta = 3/\sqrt2$ is $\Phi_5(\pi_vD_5) = 6$ divided by $\kappa^2 = 2\sqrt2$.
+    { .paper-ref }
+
+<!-- /basis:pivd5 -->
 
 **L\*.** The five-dimensional lift of M\* that attains $\kappa(M_*)$. It has $\eta(L_*) = 486/125$.
 

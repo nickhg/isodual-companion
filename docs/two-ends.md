@@ -25,7 +25,7 @@ Yet for the whole flag, D₅\* does exactly as well as D₅. Their best staircas
 
 <div class="widget" data-widget="staircase" data-config='{"lattices": ["D5", "D5*"]}'></div>
 
-They are mirror images. Take the D₅ staircase $2, \tfrac32, \tfrac43, 1, 1$, reverse it, and take reciprocals: $1, 1, \tfrac34, \tfrac23, \tfrac12$. Doubling every entry gives the D₅\* staircase $2, 2, \tfrac32, \tfrac43, 1$. That is the rule $G^*_k = G_{n-k}/\Delta$ from chapter 2, seen one step at a time. D₅ is steep at the start and flat at the end. D₅\* is flat at the start and steep at the end.
+They are mirror images. Take the D₅ staircase $2, \tfrac32, \tfrac43, 1, 1$, reverse it, and take reciprocals: $1, 1, \tfrac34, \tfrac23, \tfrac12$. Doubling every entry gives the D₅\* staircase $2, 2, \tfrac32, \tfrac43, 1$. That is the rule $G^*_k = G_{n-k}/\Delta$ from chapter 2, seen one step at a time. D₅ is steep at the start and flat at the end. D₅\* is flat at the start and steep at the end. Both bases are in the [glossary](glossary.md#named-lattices), in triangular form.
 
 Check the arithmetic. For D₅ the volumes are $G = (2, 3, 4, 4, 4)$, with $\Delta = 4$:
 

@@ -33,7 +33,7 @@ $$
 \Phi_5(M_*) \;=\; \frac{2^{16}}{3^4\cdot 5^3} \;=\; \frac{65536}{10125} \;\approx\; 6.4727,
 $$
 
-with $\kappa(M_*) = \sqrt{12/5}$ and $\eta(M_*) = 2^{14}/(3^5 \cdot 5^2) \approx 2.6970$.
+with $\kappa(M_*) = \sqrt{12/5}$ and $\eta(M_*) = 2^{14}/(3^5 \cdot 5^2) \approx 2.6970$. The [glossary](glossary.md#named-lattices) gives a Ψ-minimal basis of $M_*$ in triangular form, with its staircase $16, 12, \tfrac{45}{4}, \tfrac{135}{16}$ on the diagonal.
 
 In the paper: Definition 16, Proposition 17.
 { .paper-ref }

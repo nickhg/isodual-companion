@@ -90,6 +90,8 @@ In the paper: Theorem 5 and Table 2.
 
 Here are the staircases for D₄, D₅, E₆, E₇ and E₈. Each starts at 2, the length of a root, and steps down. Within each family the profiles agree as far as they go.
 
+Each lattice in the [glossary](glossary.md#named-lattices) has a basis to open, in triangular form: the staircase is its squared diagonal, so η can be recomputed by hand.
+
 <div class="widget" data-widget="staircase" data-config='{"lattices": ["D4", "D5", "E6", "E7", "E8"]}'></div>
 
 ## A flag that is extremal in every rank
